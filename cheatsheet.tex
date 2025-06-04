@@ -7,7 +7,7 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{float}
-\usepackage[left=1cm,right=1cm,top=1cm,bottom=1cm]{geometry}
+\usepackage[left=0.75cm,right=0.75cm,top=0.75cm,bottom=1.4cm]{geometry}
 \usepackage[skins]{tcolorbox}
 \usepackage{multicol}
 \usepackage{calrsfs}
@@ -78,7 +78,7 @@
 \MakeOuterQuote{"}
 
 
-\author{Marc-Olivier Jufer}
+\author{Marc-Olivier Jufer \\ \href{mailto:mjufer@ethz.ch}{mjufer@ethz.ch}}
 \title{Cheatsheet Probability and Statistics}
 
 
@@ -262,6 +262,7 @@
 				
 			\subsection{Conditional probabilities}
 			
+				% Conditional probabilitiy
 				\begin{definition}
 					Let $(\Omega, \Fb, \mathbb{P})$ be some probability space. Let $A, B$ be two events with $\prob{B} > 0$. The \mydef{conditional probability of} $A$ \mydef{given} $B$ is defined by
 					$$
@@ -270,8 +271,34 @@
 				\end{definition}
 				
 				\begin{example}
+					We consider the probability space $(\Omega, \Fb, \mathbb{P})$ corresponding to the throw of one die. Let $A = \{1,2,3\}$ and $B = \{2,4,6\}$. Then
+					$$
+						\prob{A \lvert B} = \frac{\prob{A \cap B}}{\prob{B}} = \frac{\frac{1}{6}}{\frac{1}{2}} = \frac{1}{3}
+					$$
 				\end{example}
+				
+				\begin{proposition}
+					Let $(\Omega, \Fb, \mathbb{P})$ be some probability space. Let $B$ be an event with positive probability. Then $\prob{\ . \ \lvert B}$ is a probability measure on $\Omega$.
+				\end{proposition}
+				
+				% Total probability
+				\begin{proposition}
+					(\mydef{Formula of total probability}). Let $B_1, \ldots, B_n$ be a partition\footnote{i.e. $\Omega = B_1 \cup \ldots \cup B_n$ and the events are pairwise disjoint.} of the sample space $\Omega$ with $\prob{B_i} > 0$ for every $i \leq i \leq n$. Then one has
+					$$
+						\forall A \in \Fb \quad \prob{A} = \sum_{i=1}^n \prob{A \lvert B_i} \prob{B_i}
+					$$
+				\end{proposition}
+				
+				% Bayes formula
+				\begin{proposition}
+					(\mydef{Bayes formula}). Let $B_1, \ldots, B_n \in \Fb$ be a partition of $\Omega$ with $\prob{B_i} > 0 \ \forall i$. For every event $A$ with $\prob{A} > 0$ we have 
+					$$
+						\forall i = 1, \ldots, n \quad \prob{B_i \lvert A} = \frac{\prob{A \vert B_i} \prob{B_i}}{\sum_{j=1}^n \prob{A \lvert B_j} \prob{B_j}}
+					$$
+				\end{proposition}
 
+				
+				
 				
 	
 	

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.3.24)  3 JUN 2025 15:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.3.24)  4 JUN 2025 11:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -827,15 +827,15 @@ e
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: landscape 
-* h-part:(L,W,R)=(28.45274pt, 788.14136pt, 28.45274pt)
-* v-part:(T,H,B)=(28.45274pt, 540.60239pt, 28.45274pt)
+* h-part:(L,W,R)=(21.33955pt, 802.36774pt, 21.33955pt)
+* v-part:(T,H,B)=(21.33955pt, 536.33464pt, 39.83368pt)
 * \paperwidth=845.04684pt
 * \paperheight=597.50787pt
-* \textwidth=788.14136pt
-* \textheight=540.60239pt
-* \oddsidemargin=-43.81725pt
-* \evensidemargin=-43.81725pt
-* \topmargin=-80.81725pt
+* \textwidth=802.36774pt
+* \textheight=536.33464pt
+* \oddsidemargin=-50.93044pt
+* \evensidemargin=-50.93044pt
+* \topmargin=-87.93044pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -881,25 +881,19 @@ LaTeX Font Info:    Trying to load font information for OMS+zplm on input line
 (/usr/share/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-Underfull \hbox (badness 5533) in paragraph at lines 113--114
-[][]\OT1/cmr/bx/n/10 Ex. 1.2. []\OT1/cmr/m/it/10 Ex-am-ples of sigma-algebras f
-or $\OT1/cmr/m/n/10 
- =
- []
-
-<set-operations-representation.png, id=32, 764.8575pt x 408.52625pt>
+<set-operations-representation.png, id=33, 764.8575pt x 408.52625pt>
 File: set-operations-representation.png Graphic file (type png)
 <use set-operations-representation.png>
 Package pdftex.def Info: set-operations-representation.png  used on input line 
 198.
-(pdftex.def)             Requested size: 256.04712pt x 136.75896pt.
-<set-relations-representation.png, id=33, 766.865pt x 325.215pt>
+(pdftex.def)             Requested size: 260.78925pt x 139.2898pt.
+<set-relations-representation.png, id=34, 766.865pt x 325.215pt>
 File: set-relations-representation.png Graphic file (type png)
 <use set-relations-representation.png>
 Package pdftex.def Info: set-relations-representation.png  used on input line 2
 10.
-(pdftex.def)             Requested size: 256.04712pt x 108.58669pt.
-[1
+(pdftex.def)             Requested size: 260.78925pt x 110.59644pt.
+ [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts
 /enc/dvips/cm-super/cm-super-ts1.enc} <./set-operations-representation.png (PNG
@@ -914,30 +908,34 @@ Package rerunfilecheck Info: File `cheatsheet.out' has not changed.
 (rerunfilecheck)             Checksum: D42CB12782A5FA5542E6BA97A618C353;1101.
  ) 
 Here is how much of TeX's memory you used:
- 26472 strings out of 475054
- 513239 string characters out of 5762999
- 969470 words of memory out of 5000000
- 49050 multiletter control sequences out of 15000+600000
- 570819 words of font info for 82 fonts, out of 8000000 for 9000
+ 26478 strings out of 475054
+ 513323 string characters out of 5762999
+ 968535 words of memory out of 5000000
+ 49052 multiletter control sequences out of 15000+600000
+ 571429 words of font info for 84 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 98i,8n,105p,547b,781s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,8n,105p,547b,855s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></
-usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
-b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/font
-s/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/p
-ublic/cm-super/sfrm1000.pfb>
-Output written on cheatsheet.pdf (2 pages, 265321 bytes).
+m/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></
+usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pf
+b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.
+pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fo
+nts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1
+/public/cm-super/sfrm1000.pfb>
+Output written on cheatsheet.pdf (2 pages, 313579 bytes).
 PDF statistics:
- 149 PDF objects out of 1000 (max. 8388607)
- 111 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
+ 181 PDF objects out of 1000 (max. 8388607)
+ 133 compressed objects within 2 object streams
+ 31 named destinations out of 1000 (max. 500000)
  71 words of extra memory for PDF output out of 10000 (max. 10000000)
 
