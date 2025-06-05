@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.3.24)  4 JUN 2025 11:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.3.24)  5 JUN 2025 12:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -758,9 +758,18 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip63
 )
-\c@definition=\count344
-\c@example=\count345
-\c@proposition=\count346
+(/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip64
+\enit@outerparindent=\dimen292
+\enit@toks=\toks49
+\enit@inbox=\box124
+\enit@count@id=\count344
+\enitdp@description=\count345
+)
+\c@definition=\count346
+\c@example=\count347
+\c@proposition=\count348
 Package csquotes Info: Allocating character ".
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -769,8 +778,8 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
 
 (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count347
-\l__pdf_internal_box=\box124
+\l__color_backend_stack_int=\count349
+\l__pdf_internal_box=\box125
 )
 
 LaTeX Warning: Unused global option(s):
@@ -779,37 +788,37 @@ LaTeX Warning: Unused global option(s):
 (./cheatsheet.aux)
 \openout1 = `cheatsheet.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count348
-\scratchdimen=\dimen292
-\scratchbox=\box125
-\nofMPsegments=\count349
-\nofMParguments=\count350
-\everyMPshowfont=\toks49
-\MPscratchCnt=\count351
-\MPscratchDim=\dimen293
-\MPnumerator=\count352
-\makeMPintoPDFobject=\count353
-\everyMPtoPDFconversion=\toks50
+\scratchcounter=\count350
+\scratchdimen=\dimen293
+\scratchbox=\box126
+\nofMPsegments=\count351
+\nofMParguments=\count352
+\everyMPshowfont=\toks50
+\MPscratchCnt=\count353
+\MPscratchDim=\dimen294
+\MPnumerator=\count354
+\makeMPintoPDFobject=\count355
+\everyMPtoPDFconversion=\toks51
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -853,68 +862,68 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package csquotes Info: Making character " active on input line 85.
-Package hyperref Info: Link coloring OFF on input line 85.
+Package csquotes Info: Making character " active on input line 86.
+Package hyperref Info: Link coloring OFF on input line 86.
 (./cheatsheet.out) (./cheatsheet.out)
 \@outlinefile=\write4
 \openout4 = `cheatsheet.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 88.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 89.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 88.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 89.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OMS+rsfs on input line 
-88.
+89.
 
 (/usr/share/texmf-dist/tex/latex/calrsfs/OMSrsfs.fd)
 LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 
-105.
+106.
 
 (/usr/share/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-<set-operations-representation.png, id=33, 764.8575pt x 408.52625pt>
+<set-operations-representation.png, id=45, 764.8575pt x 408.52625pt>
 File: set-operations-representation.png Graphic file (type png)
 <use set-operations-representation.png>
 Package pdftex.def Info: set-operations-representation.png  used on input line 
-198.
+199.
 (pdftex.def)             Requested size: 260.78925pt x 139.2898pt.
-<set-relations-representation.png, id=34, 766.865pt x 325.215pt>
+<set-relations-representation.png, id=46, 766.865pt x 325.215pt>
 File: set-relations-representation.png Graphic file (type png)
 <use set-relations-representation.png>
 Package pdftex.def Info: set-relations-representation.png  used on input line 2
-10.
+11.
 (pdftex.def)             Requested size: 260.78925pt x 110.59644pt.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts
 /enc/dvips/cm-super/cm-super-ts1.enc} <./set-operations-representation.png (PNG
- copy)> <./set-relations-representation.png (PNG copy)>]
+ copy)> <./set-relations-representation.png (PNG copy)>] [2]
 
-[2] (./cheatsheet.aux)
+[3] (./cheatsheet.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `cheatsheet.out' has not changed.
-(rerunfilecheck)             Checksum: D42CB12782A5FA5542E6BA97A618C353;1101.
+(rerunfilecheck)             Checksum: DD99AFCFF46DE18743CC8A07808C39C4;1643.
  ) 
 Here is how much of TeX's memory you used:
- 26478 strings out of 475054
- 513323 string characters out of 5762999
- 968535 words of memory out of 5000000
- 49052 multiletter control sequences out of 15000+600000
+ 26825 strings out of 475054
+ 519259 string characters out of 5762999
+ 977193 words of memory out of 5000000
+ 49384 multiletter control sequences out of 15000+600000
  571429 words of font info for 84 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 98i,8n,105p,547b,855s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,8n,105p,547b,900s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/type1/pub
@@ -932,10 +941,10 @@ pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fo
 nts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1
 /public/cm-super/sfrm1000.pfb>
-Output written on cheatsheet.pdf (2 pages, 313579 bytes).
+Output written on cheatsheet.pdf (3 pages, 323741 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
- 133 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 207 PDF objects out of 1000 (max. 8388607)
+ 158 compressed objects within 2 object streams
+ 42 named destinations out of 1000 (max. 500000)
+ 95 words of extra memory for PDF output out of 10000 (max. 10000000)
 

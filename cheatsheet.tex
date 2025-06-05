@@ -15,6 +15,7 @@
 \usepackage{csquotes}
 \usepackage{mathtools}
 \usepackage{hyperref}
+\usepackage{enumitem}
 
 
 \definecolor{DarkGreen}{RGB}{1,100,32}
@@ -296,7 +297,63 @@
 						\forall i = 1, \ldots, n \quad \prob{B_i \lvert A} = \frac{\prob{A \vert B_i} \prob{B_i}}{\sum_{j=1}^n \prob{A \lvert B_j} \prob{B_j}}
 					$$
 				\end{proposition}
+				
+				\begin{example}
+					Test to detect a disease which concerns about $1/10000$ of the population. The test gives the right answer $99\%$ of the time. If a patient has a positive test, what is the probability that he is actually sick ?\\
+					We modeled the situation as $\Omega = \{0,1\} \times \{0,1\}$. $\Fb = \Pb(\Omega)$ and an outcome is $\omega = (\omega_1, \omega_2)$, where $\omega_1$ is $1$ if the patient is sick and $\omega_2$ is $1$ if the test is positive. Let $S = \{(1,0), (1,1)\}$ be the event that the patient is sick and $T = \{(0,1),(1,1)\}$ the event that the test is positive.\\
+					From the hypotheses, we have
+					$$
+						\prob{S} = \frac{1}{10000}, \quad \prob{T \lvert S} = \frac{99}{100}, \quad \prob{T \lvert S^c} = \frac{1}{100}
+					$$
+					By applying the Bayes formula to the partition $\Omega = S \cup S^c$, we obtain
+					$$
+						\prob{S \lvert T} = \frac{\prob{T \lvert S} \prob{S}}{\prob{T \lvert S} \prob{S} + \prob{T \lvert S^c} \prob{S^c}} \simeq 0.0098
+					$$
+				\end{example}
+				
+				
+			\subsection{Independence}
+			
+				% Independence of events
+				\begin{definition}
+					Let $(\Omega, \Fb, \mathbb{P})$ be a probability space. Two events $A$ and $B$ are said to be \mydef{independent} if 
+					$$
+						\prob{A \cap B} = \prob{A} \prob{B}
+					$$
+					$A$ is independent of $B$ iff $A$ is independent of $B^c$. \\
+					If $\prob{A} \in \{0,1\}$, then $A$ is independent of every event. \\
+					If $A$ is independent with itself (i.e. $\prob{A \cap A} = \prob{A}^2$), then $\prob{A} \in \{0, 1\}$.
+				\end{definition}
+				
+				\begin{proposition}
+					Let $A, B \in \Fb$ be two events with $\prob{A}, \prob{B} > 0$. Then the following are equivalent :
+					\begin{enumerate}[label=\roman*.]
+						\item $\prob{A \cap B} = \prob{A} \prob{B}$ : \textcolor{DarkGreen}{A and B are independent}
+						\item $\prob{A \lvert B} = \prob{A}$ : \textcolor{DarkGreen}{the occurrence of B has no influence on A}
+						\item $\prob{B \lvert A} = \prob{B}$ : \textcolor{DarkGreen}{the occurrence of A has no influence on B}
+					\end{enumerate} 
+				\end{proposition}
+				
+				% Independence of collection of events
+				\begin{definition}
+					Let $I$ be an arbitrary set of indices. A collection of events $(A_i)_{i \in I}$ is said to be \mydef{independent} if 
+					$$
+						\forall J \subset I finite \quad \prob{\bigcap\limits_{j \in J} A_j} = \prod_{j \in J} \prob{A_j}
+					$$
+				\end{definition}
+				
+				\begin{intuition}
+					Three events $A$, $B$ and $C$ are independent if the following 4 equations are satisfied :
+						$$\prob{A \cap B} = \prob{A} \prob{B} $$
+						$$\prob{A \cap C} = \prob{A} \prob{C} $$
+						$$\prob{B \cap C} = \prob{B} \prob{C} $$
+						$$\prob{A \cap B \cap C} = \prob{A}\prob{B}\prob{C}$$
+				\end{intuition}
 
+
+	\newpage
+	\section{Random variables and distribution functions}
+			\subsection{Abstract definition}
 				
 				
 				
