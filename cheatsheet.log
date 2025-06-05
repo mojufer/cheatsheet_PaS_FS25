@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.3.24)  5 JUN 2025 12:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.3.24)  5 JUN 2025 14:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -917,8 +917,8 @@ Package rerunfilecheck Info: File `cheatsheet.out' has not changed.
 (rerunfilecheck)             Checksum: DD99AFCFF46DE18743CC8A07808C39C4;1643.
  ) 
 Here is how much of TeX's memory you used:
- 26825 strings out of 475054
- 519259 string characters out of 5762999
+ 26826 strings out of 475054
+ 519273 string characters out of 5762999
  977193 words of memory out of 5000000
  49384 multiletter control sequences out of 15000+600000
  571429 words of font info for 84 fonts, out of 8000000 for 9000
@@ -941,10 +941,10 @@ pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fo
 nts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1
 /public/cm-super/sfrm1000.pfb>
-Output written on cheatsheet.pdf (3 pages, 323741 bytes).
+Output written on cheatsheet.pdf (3 pages, 324857 bytes).
 PDF statistics:
- 207 PDF objects out of 1000 (max. 8388607)
- 158 compressed objects within 2 object streams
- 42 named destinations out of 1000 (max. 500000)
+ 209 PDF objects out of 1000 (max. 8388607)
+ 160 compressed objects within 2 object streams
+ 43 named destinations out of 1000 (max. 500000)
  95 words of extra memory for PDF output out of 10000 (max. 10000000)
 
