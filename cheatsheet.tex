@@ -363,8 +363,29 @@
 					$$
 				\end{definition}
 				
+				\begin{example}
+					We throw a fair die. The sample space is $\Omega = \{1,2,3,4,5,6\}$ and we consider the Laplace model $(\Omega, \Fb, \mathbb{P})$. Suppose we gamble on the outcome in such a way that our profit is $-1$ if the outcome is $1$, $2$ or $3$ ; $0$ if the outcome is $4$ and $2$ if the outcome is $5$ or $6$. Our profit can be represented by the mapping $X$ defined by 
+					$$
+						\forall \omega \in \Omega \quad X(\omega) = \begin{cases}
+							-1 \quad \text{if } \omega = 1,2,3, \\
+							0 \quad \text{if } \omega = 4, \\
+							2 \quad \text{if } \omega = 5,6
+						\end{cases}
+					$$
+					Since $\Fb = \Pb(\Omega)$, we have $\{\omega : X(\omega) \leq a\} \in \Fb$ for every $a$. Therefore, $X$ is a random variable on $(\Omega, \Fb, \mathbb{P})$.
+				\end{example}
 				
+				\begin{definition}
+					When events are defined in terms of random variable, we omit the dependence in $\omega$. E.g. for $a \leq b$ we write 
+					$$\{X \leq a\} = \{\omega \in \Omega : X(\omega) \leq a\}$$
+					$$\{a < X \leq b\} = \{\omega \in \Omega : a < X(\omega) < b\}$$
+					$$\{X \in \mathbb{Z}\} = \{\omega \in \Omega : X(\omega) \in \mathbb{Z}\}$$
+					When consider the probability of events as above, we omit the brackets 
+					$$ \prob{X \leq a} = \prob{\{X \leq a\}} = \prob{\{\omega \in \Omega : X(\omega) \leq a\}}$$
+				\end{definition}
 				
+			
+			\subsection{Distribution function}
 	
 	
 \end{multicols}	
