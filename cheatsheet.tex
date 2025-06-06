@@ -426,6 +426,35 @@
 				 		\item $\lim\limits_{a \rightarrow -\infty} F(a) = 0$ and $\lim\limits_{a \rightarrow \infty} F(a) = 1$
 				 	\end{enumerate}
 				 \end{proposition}
+				 
+				 
+			\subsection{Independence}
+				
+				% Independence of random variables
+				\begin{definition}
+					Let $X_1, \ldots, X_n$ be $n$ random variables on some probability space $(\Omega, \Fb, \mathbb{P})$. We say that they are \mydef{independent} if
+					$
+						\forall x_1, \ldots, x_n \in \mathbb{R} \quad \prob{X_1 \leq x_1, \ldots, X_n \leq x_n} 
+						= \prob{X_1 \leq x_1} \ldots \prob{X_n \leq x_n}
+					$.\\
+					One can show that $X_1, \ldots, X_n$ are independent iff $\forall I_1 \subset \mathbb{R}, \ldots, I_n \subset \mathbb{R}$ intervals $\{X_1 \in I_1\}, \ldots, \{X_n \in I_n\}$ are independent.
+				\end{definition}
+				
+				% Grouping
+				\begin{proposition}
+					(\mydef{Grouping}). Let $X_1, \ldots, X_n$ be $n$ independent r.v. Let $1 \leq i_1 < i_2 < \ldots < i_k \leq n$ be some indices and $\phi_1, \ldots, \phi_k$ some functions. Then 
+					$Y_1 = \phi_1 (X_1, \ldots, X_{i_1}), Y_2 = \phi_2(X_{i_1 + 1}, \ldots, X_{i_2}), \ldots, Y_k = \phi_k (X_{i_{k-1}+1}, \ldots, X_{i_k})$
+					are independent.
+				\end{proposition}
+				
+				% Sequences of i.i.d. random variables
+				\begin{definition}
+					An infinite sequence $X_1, X_2, \ldots$ of random variables is said to be 
+					\begin{itemize}
+						\item \mydef{independent} if $X_1, \ldots, X_n$ are independent for every $n$
+						\item \mydef{independent and identically distributed} (i.i.d) if they are independent and they have the same distribution function, i.e. $\forall i,j \quad F_{X_i} = F_{X_j}$.
+					\end{itemize}
+				\end{definition}
 	
 	
 \end{multicols}	
