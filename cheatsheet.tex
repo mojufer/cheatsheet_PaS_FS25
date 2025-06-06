@@ -455,6 +455,24 @@
 						\item \mydef{independent and identically distributed} (i.i.d) if they are independent and they have the same distribution function, i.e. $\forall i,j \quad F_{X_i} = F_{X_j}$.
 					\end{itemize}
 				\end{definition}
+				
+				
+			\subsection{Transformation of random variables}
+				
+				% peut-être commenter les deux premières lignes
+				We can create r.v. from other r.v. on the same probability space. For example, consider $Z_1 = \exp(X_1), Z_2 = X_1 + X_2$. Not to forget : r.v. are maps $\Omega \to \mathbb{R}$.\\
+				We can work with r.v. as if they were real numbers with the following notation :
+				\begin{definition}
+					If $X$ is a r.v. and $\phi : \mathbb{R} \to \mathbb{R}$, then we write 
+					$$
+						\phi(X) := \phi \circ X 
+					$$
+					to to $\phi(X)$ a new mapping $\Omega \to \mathbb{R}$.\\
+					We also consider function of several variables. If $X_1, \ldots, X_n$ are $n$ r.v. and $\phi : \mathbb{R}^n \to \mathbb{R}$, then we write 
+					$$
+						\phi(X_1, \ldots, X_n) := \phi \circ (X_1, \ldots, X_n)
+					$$
+				\end{definition} 
 	
 	
 \end{multicols}	

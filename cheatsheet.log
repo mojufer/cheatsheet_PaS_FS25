@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.3.24)  6 JUN 2025 16:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.3.24)  6 JUN 2025 16:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -890,13 +890,13 @@ LaTeX Font Info:    Trying to load font information for OMS+zplm on input line
 (/usr/share/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-<set-operations-representation.png, id=53, 764.8575pt x 408.52625pt>
+<set-operations-representation.png, id=57, 764.8575pt x 408.52625pt>
 File: set-operations-representation.png Graphic file (type png)
 <use set-operations-representation.png>
 Package pdftex.def Info: set-operations-representation.png  used on input line 
 199.
 (pdftex.def)             Requested size: 260.78925pt x 139.2898pt.
-<set-relations-representation.png, id=54, 766.865pt x 325.215pt>
+<set-relations-representation.png, id=58, 766.865pt x 325.215pt>
 File: set-relations-representation.png Graphic file (type png)
 <use set-relations-representation.png>
 Package pdftex.def Info: set-relations-representation.png  used on input line 2
@@ -907,7 +907,7 @@ Package pdftex.def Info: set-relations-representation.png  used on input line 2
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts
 /enc/dvips/cm-super/cm-super-ts1.enc} <./set-operations-representation.png (PNG
  copy)> <./set-relations-representation.png (PNG copy)>] [2]
-<distribution_function.png, id=115, 432.61626pt x 153.57375pt>
+<distribution_function.png, id=119, 432.61626pt x 153.57375pt>
 File: distribution_function.png Graphic file (type png)
 <use distribution_function.png>
 Package pdftex.def Info: distribution_function.png  used on input line 409.
@@ -920,13 +920,13 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `cheatsheet.out' has not changed.
-(rerunfilecheck)             Checksum: 49A60475E6D40972AC0A4AFAF1B8077C;1927.
+(rerunfilecheck)             Checksum: 3F6894753C3FBD70EB7D793E039FA4A0;2164.
  ) 
 Here is how much of TeX's memory you used:
- 26856 strings out of 475054
- 519803 string characters out of 5762999
+ 26859 strings out of 475054
+ 519847 string characters out of 5762999
  977193 words of memory out of 5000000
- 49397 multiletter control sequences out of 15000+600000
+ 49398 multiletter control sequences out of 15000+600000
  572127 words of font info for 86 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  98i,9n,105p,547b,900s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -950,10 +950,10 @@ amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/s
 hare/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texm
 f-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on cheatsheet.pdf (3 pages, 373924 bytes).
+Output written on cheatsheet.pdf (3 pages, 375428 bytes).
 PDF statistics:
- 255 PDF objects out of 1000 (max. 8388607)
- 197 compressed objects within 2 object streams
- 59 named destinations out of 1000 (max. 500000)
- 116 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 262 PDF objects out of 1000 (max. 8388607)
+ 203 compressed objects within 3 object streams
+ 61 named destinations out of 1000 (max. 500000)
+ 124 words of extra memory for PDF output out of 10000 (max. 10000000)
 
