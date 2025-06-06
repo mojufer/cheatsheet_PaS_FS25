@@ -386,6 +386,46 @@
 				
 			
 			\subsection{Distribution function}
+			
+				% Distribution function
+				\begin{definition}
+					Let $X$ be a random variable on a prob. space $(\Omega, \Fb, \mathbb{P})$. The \mydef{distribution function of X} is the function $F_X : \mathbb{R} \to \left[0,1\right]$ defined by
+					$$
+						\forall a \in \mathbb{R} \quad F_X(a) = \prob{X \leq a}
+					$$
+				\end{definition}
+				
+				\begin{example}
+					Same example with the die. Let $X$ be the random variable defined as above. For $a \in \mathbb{R}$ we have 
+					$$
+						F_X(a) = \begin{cases}
+							0 \quad \text{if } a < -1,\\
+							1/2 \quad \text{if } -1 \leq a < 0, \\
+							2/3 \quad \text{if } 0 \leq a < 2, \\
+							1 \quad \text{if } a \geq 2
+						\end{cases}
+					$$
+					\begin{figure}[H]
+						\includegraphics[width=\linewidth]{distribution_function.png}
+						\caption{Graph of the distribution function $F_X$}
+					\end{figure}
+				 \end{example}
+				 
+				 \begin{proposition}
+				 	(\mydef{Basic identity}). Let $a < b$ be two real numbers. Then 
+				 	$$
+				 		\prob{a < X \leq b} = F(b) - F(a)
+				 	$$
+				 \end{proposition}
+				 
+				 \begin{proposition}
+				 	Let $X$ be a r.v. on some probability space $(\Omega, \Fb, \mathbb{P})$. The distribution function $F = F_X : \mathbb{R} \to \left[0,1\right]$ of $X$ satisfies the following properties :
+				 	\begin{enumerate}[label=\roman*.]
+				 		\item $F$ is nondecreasing
+				 		\item $F$ is right continuous\footnote{i.e. $F(a) = \lim_{h \downarrow 0}F(a+h)$ for every $a \in \mathbb{R}$}
+				 		\item $\lim\limits_{a \rightarrow -\infty} F(a) = 0$ and $\lim\limits_{a \rightarrow \infty} F(a) = 1$
+				 	\end{enumerate}
+				 \end{proposition}
 	
 	
 \end{multicols}	
