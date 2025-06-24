@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.6.11)  24 JUN 2025 15:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.6.11)  24 JUN 2025 16:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -660,24 +660,24 @@ LaTeX Warning: Unused global option(s):
 (./cheatsheet.aux)
 \openout1 = `cheatsheet.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count350
@@ -731,35 +731,35 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package csquotes Info: Making character " active on input line 88.
-Package hyperref Info: Link coloring OFF on input line 88.
+Package csquotes Info: Making character " active on input line 89.
+Package hyperref Info: Link coloring OFF on input line 89.
 (./cheatsheet.out) (./cheatsheet.out)
 \@outlinefile=\write4
 \openout4 = `cheatsheet.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 91.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 92.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 91.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 92.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OMS+rsfs on input line 91.
+LaTeX Font Info:    Trying to load font information for OMS+rsfs on input line 92.
  (/usr/share/texmf-dist/tex/latex/calrsfs/OMSrsfs.fd)
-LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 108.
+LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 109.
  (/usr/share/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
 <set-operations-representation.png, id=85, 764.8575pt x 408.52625pt>
 File: set-operations-representation.png Graphic file (type png)
 <use set-operations-representation.png>
-Package pdftex.def Info: set-operations-representation.png  used on input line 201.
+Package pdftex.def Info: set-operations-representation.png  used on input line 202.
 (pdftex.def)             Requested size: 260.78925pt x 139.2898pt.
 <set-relations-representation.png, id=86, 766.865pt x 325.215pt>
 File: set-relations-representation.png Graphic file (type png)
 <use set-relations-representation.png>
-Package pdftex.def Info: set-relations-representation.png  used on input line 213.
+Package pdftex.def Info: set-relations-representation.png  used on input line 214.
 (pdftex.def)             Requested size: 260.78925pt x 110.59644pt.
  [1
 
@@ -767,21 +767,21 @@ Package pdftex.def Info: set-relations-representation.png  used on input line 21
 <distribution_function.png, id=147, 432.61626pt x 153.57375pt>
 File: distribution_function.png Graphic file (type png)
 <use distribution_function.png>
-Package pdftex.def Info: distribution_function.png  used on input line 411.
+Package pdftex.def Info: distribution_function.png  used on input line 412.
 (pdftex.def)             Requested size: 260.78925pt x 92.58081pt.
 <bernoulli_uniform_rv.png, id=149, 659.46375pt x 167.62625pt>
 File: bernoulli_uniform_rv.png Graphic file (type png)
 <use bernoulli_uniform_rv.png>
-Package pdftex.def Info: bernoulli_uniform_rv.png  used on input line 511.
+Package pdftex.def Info: bernoulli_uniform_rv.png  used on input line 512.
 (pdftex.def)             Requested size: 260.78925pt x 66.28964pt.
  [3 <./distribution_function.png (PNG copy)>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 550.
+(hyperref)                removing `math shift' on input line 551.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 550.
+(hyperref)                removing `math shift' on input line 551.
 
 [4 <./bernoulli_uniform_rv.png (PNG copy)>]
 
@@ -794,18 +794,18 @@ Package rerunfilecheck Info: File `cheatsheet.out' has not changed.
 (rerunfilecheck)             Checksum: 5995DDDC7EAE1A8F1B719C7E2AA711F3;3639.
  ) 
 Here is how much of TeX's memory you used:
- 26915 strings out of 475171
- 520703 string characters out of 5767095
- 976796 words of memory out of 5000000
- 49391 multiletter control sequences out of 15000+600000
+ 26919 strings out of 475171
+ 520749 string characters out of 5767095
+ 976802 words of memory out of 5000000
+ 49392 multiletter control sequences out of 15000+600000
  572432 words of font info for 87 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  98i,9n,105p,547b,900s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on cheatsheet.pdf (5 pages, 410971 bytes).
+Output written on cheatsheet.pdf (5 pages, 413185 bytes).
 PDF statistics:
- 341 PDF objects out of 1000 (max. 8388607)
- 277 compressed objects within 3 object streams
- 94 named destinations out of 1000 (max. 500000)
+ 345 PDF objects out of 1000 (max. 8388607)
+ 281 compressed objects within 3 object streams
+ 97 named destinations out of 1000 (max. 500000)
  185 words of extra memory for PDF output out of 10000 (max. 10000000)
 

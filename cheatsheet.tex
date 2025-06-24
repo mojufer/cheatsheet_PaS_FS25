@@ -70,6 +70,7 @@
 \newcommand{\Fb}{\pazocal{F}}
 \newcommand{\Pb}{\pazocal{P}}
 \newcommand{\Ub}{\pazocal{U}}
+\newcommand{\Cb}{\pazocal{C}}
 
 \newcommand{\mydef}[1]{\textcolor{magenta}{\textbf{#1}}}
 \newcommand{\prob}[1]{\mathbb{P}\left[ #1 \right]}
@@ -679,6 +680,31 @@
 
 
 		\subsection{Continous random variables}
+			
+			% Continuous random variables
+			\begin{definition}
+				A r.v. $X : \Omega \to \mathbb{R}$ is said to be \mydef{continuous} if its distribution function $F_X$ can be written as
+				$$
+				F_X(a) = \int_{-\infty}^{a} f(x)\, dx \quad \text{for all } a \in \mathbb{R}
+				$$
+				for some nonnegative function $f : \mathbb{R} \to \mathbb{R_+}$, called the \mydef{density} of $X$.
+			\end{definition}
+
+			\begin{intuition}
+				$f(x)\, dx$ represents the probability that $X$ takes a value in the infinitesimal interval $\left[x, x + dx\right]$.
+			\end{intuition}
+
+			\begin{proposition}
+				The density $f$ of a r.v. satisfies $\int_{-\infty}^{+\infty} f(x)\, dx = 1$.
+			\end{proposition}
+
+			\begin{proposition}
+				Let $X$ be a r.v. Assume the distribution function $F_X$ is continuous and piecewise $\Cb^1$, i.e. that there exist $x_0 = -\infty < x_1 < \ldots < x_{n-1} < x_n = +\infty$ s.t. $F_X$ is $\Cb^1$ on every interval $(x_i, x_{i+1}$. Then $X$ is a continuous r.v. and a density $f$ can be constructed by defining 
+				$$
+					\forall x \in (x_i, x_{i+1}) \quad f(x) = F'_X(x)
+				$$
+				and setting arbitrary values at $x_1, \ldots, x_{n-1}$.
+			\end{proposition}
 
 
 

@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1750772956.01355 "cheatsheet.tex" "cheatsheet.pdf" "cheatsheet" 1750772957.08374 0
+["pdflatex"] 1750776091.88948 "cheatsheet.tex" "cheatsheet.pdf" "cheatsheet" 1750776093.88468 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1742685315 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1742685315 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm" 1742685315 2796 d37c29814a6717720ee1a7c9a0b2c3b8 ""
@@ -207,9 +207,9 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1749641983 5311557 9da84c45f5b388655502706482323571 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1749641845 2008242 e00ce6b463c170e0f4839e5c8420cc10 ""
   "bernoulli_uniform_rv.png" 1750755138.44316 7987 c6d15448f5348375bbf95d9d417b0b1f ""
-  "cheatsheet.aux" 1750772956.95848 3758 51d505d043e2d904e89b21917e0045b7 "pdflatex"
-  "cheatsheet.out" 1750772956.95948 3639 5995dddc7eae1a8f1b719c7e2aa711f3 "pdflatex"
-  "cheatsheet.tex" 1750772953.06748 29208 46c3596b5fe89c86c8d0c99687b842f0 ""
+  "cheatsheet.aux" 1750776093.65111 3758 51d505d043e2d904e89b21917e0045b7 "pdflatex"
+  "cheatsheet.out" 1750776093.65311 3639 5995dddc7eae1a8f1b719c7e2aa711f3 "pdflatex"
+  "cheatsheet.tex" 1750776091.46411 30419 f0645b1f7912b80c1f79f739c9bcbfdb ""
   "distribution_function.png" 1749218150 3676 c3dc27e3feb4ca9aed2c7809cb56941f ""
   "set-operations-representation.png" 1748426420 43778 f3d015a76e5bb950289194730de7e100 ""
   "set-relations-representation.png" 1748426928 50477 11b21fbf175ebb4f2e4331e37e288149 ""
