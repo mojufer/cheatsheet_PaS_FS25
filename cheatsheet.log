@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.6.11)  24 JUN 2025 12:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.6.11)  24 JUN 2025 15:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -751,12 +751,12 @@ LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 1
  (/usr/share/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-<set-operations-representation.png, id=81, 764.8575pt x 408.52625pt>
+<set-operations-representation.png, id=85, 764.8575pt x 408.52625pt>
 File: set-operations-representation.png Graphic file (type png)
 <use set-operations-representation.png>
 Package pdftex.def Info: set-operations-representation.png  used on input line 201.
 (pdftex.def)             Requested size: 260.78925pt x 139.2898pt.
-<set-relations-representation.png, id=82, 766.865pt x 325.215pt>
+<set-relations-representation.png, id=86, 766.865pt x 325.215pt>
 File: set-relations-representation.png Graphic file (type png)
 <use set-relations-representation.png>
 Package pdftex.def Info: set-relations-representation.png  used on input line 213.
@@ -764,12 +764,12 @@ Package pdftex.def Info: set-relations-representation.png  used on input line 21
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./set-operations-representation.png (PNG copy)> <./set-relations-representation.png (PNG copy)>] [2]
-<distribution_function.png, id=143, 432.61626pt x 153.57375pt>
+<distribution_function.png, id=147, 432.61626pt x 153.57375pt>
 File: distribution_function.png Graphic file (type png)
 <use distribution_function.png>
 Package pdftex.def Info: distribution_function.png  used on input line 411.
 (pdftex.def)             Requested size: 260.78925pt x 92.58081pt.
-<bernoulli_uniform_rv.png, id=145, 659.46375pt x 167.62625pt>
+<bernoulli_uniform_rv.png, id=149, 659.46375pt x 167.62625pt>
 File: bernoulli_uniform_rv.png Graphic file (type png)
 <use bernoulli_uniform_rv.png>
 Package pdftex.def Info: bernoulli_uniform_rv.png  used on input line 511.
@@ -783,29 +783,29 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 550.
 
+[4 <./bernoulli_uniform_rv.png (PNG copy)>]
 
-
-[4 <./bernoulli_uniform_rv.png (PNG copy)>] (./cheatsheet.aux)
+[5] (./cheatsheet.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `cheatsheet.out' has not changed.
-(rerunfilecheck)             Checksum: 803403869620DD80DB4FBA8033D7F82B;3445.
+(rerunfilecheck)             Checksum: 5995DDDC7EAE1A8F1B719C7E2AA711F3;3639.
  ) 
 Here is how much of TeX's memory you used:
- 26904 strings out of 475171
- 520551 string characters out of 5767095
- 976766 words of memory out of 5000000
- 49389 multiletter control sequences out of 15000+600000
+ 26915 strings out of 475171
+ 520703 string characters out of 5767095
+ 976796 words of memory out of 5000000
+ 49391 multiletter control sequences out of 15000+600000
  572432 words of font info for 87 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  98i,9n,105p,547b,900s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on cheatsheet.pdf (4 pages, 404965 bytes).
+Output written on cheatsheet.pdf (5 pages, 410971 bytes).
 PDF statistics:
- 324 PDF objects out of 1000 (max. 8388607)
- 261 compressed objects within 3 object streams
- 85 named destinations out of 1000 (max. 500000)
- 177 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 341 PDF objects out of 1000 (max. 8388607)
+ 277 compressed objects within 3 object streams
+ 94 named destinations out of 1000 (max. 500000)
+ 185 words of extra memory for PDF output out of 10000 (max. 10000000)
 

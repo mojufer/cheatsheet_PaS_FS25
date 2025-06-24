@@ -231,7 +231,7 @@
 							$$
 						\item[P6.] If $A$ and $B$ are two events (not necessarily disjoint), then 
 							$$
-								\prob{A \cup B} = \prob{A} + \prob{B} - \prob{A \ cap B}
+								\prob{A \cup B} = \prob{A} + \prob{B} - \prob{A \cap B}
 							$$
 					\end{description}
 				\end{proposition}
@@ -480,7 +480,7 @@
 			\subsection{Construction of random variables}
 				
 				% Bernoulli random variables
-				\begin{definition}
+			\begin{definition} \label{Bernoulli_rv}
 					Let $p \in \left[0,1\right]$. A r.v. $X$ is said to be a \mydef{Bernoulli r.v. with parameter $p$} if 
 					$$
 					\prob{X = 0} = 1-p \quad \text{and} \quad \prob{X = 1} = p
@@ -608,6 +608,78 @@
 
 
 		\subsection{Examples of discrete random variables}
+			
+		 	The simplest (non constant) r.v. is the Bernoulli r.v. defined in definition \ref{Bernoulli_rv}.
+
+			% Binomial distribution
+			\begin{definition}
+				Let $0 \leq p \leq 1$, let $n \in \mathbb{N}$. A r.v. $X$ is said to be a \mydef{binomial r.v. with parameters $n$ and $p$} if it takes values in $W = \{0,\ldots, n\}$ and 
+				$$
+				\forall k \in \{0,\ldots,n\} \quad \prob{X = k} = \binom{n}{k} p^k (1-p)^{n-k}
+				$$
+				In that case we write $X \sim \text{Bin}(n,p)$.
+			\end{definition}
+
+			% Sum of independent Bernoulli and binomial
+			\begin{proposition}
+				(\mydef{Sum of independent Bernoulli and binomail}. Let $0 \leq p \leq 1$, let $n \in \mathbb{N}$. Let $X_1, \ldots, X_n$ be $n$ independent Bernoulli r.v. with parameter $p$. Then
+				$$
+					S_n := X_1 + \ldots + X_n
+				$$
+				is a binomial r.v. with parameter $n$ and $p$.
+			\end{proposition}
+
+			\begin{intuition}
+				In particular, the distribution $\text{Bin}(1,p)$ is the same as the distribution $\text{Ber}(p)$. On can also check that if $X \sim \text{Bin}(m,p)$ and $Y \sim \text{Bin}(n,p)$ and $X,Y$ are independent, then $X + Y \sim \text{Bin}(m + n, p)$.
+			\end{intuition}
+
+			% Geometric distribution
+			\begin{definition}
+				Let $0 \leq p \leq 1$. A r.v. $X$ is said to be a \mydef{geometric r.v. with parameter $p$} if it takes values in $W = \mathbb{N} \setminus \{0\}$ and 
+				$$
+					\forall k \in \mathbb{N} \quad \prob{X = k} = (1-p)^{k-1} \cdot p
+				$$
+				In this case, we write $X \sim \text{Geom}(p)$.
+			\end{definition}
+
+			% Geometric r.v. appears naturally as the first success in an infinite sequence of Bernoulli experiments with parameter p
+			\begin{proposition}
+				Let $X_1, X_2, \ldots$ be a sequence of infinitely many independent Bernoulli r.v. with parameter $p$. Then
+				$$
+				T := \min\{n \geq 1 : X_n = 1\}
+				$$
+				is a geometric r.v. with parameter $p$.
+			\end{proposition}
+
+			% Absence of memory of the geometric distribution
+			\begin{proposition}
+				(\mydef{Absence of memory of the geometric distribution}). Let $T \sim \text{Geom}(p)$ for some $0 < p < 1$. Then
+				$$
+					\forall n \geq 0 \ \forall k \geq 1 \quad \prob{T \geq n + k \lvert T > n} = \prob{T \geq k}
+				$$
+			\end{proposition}
+
+			% Poisson distribution
+			\begin{definition}
+				Let $\lambda > 0$ be a positive real number. A r.v. $X$ is said to be a \mydef{Poisson r.v. with parameter $\lambda$} if it takes values in $W = \mathbb{N}$ and 
+				$$
+				\forall k \in \mathbb{N} \quad \prob{X = k} = \frac{\lambda^k}{k!} e^{-\lambda}
+				$$
+				In this case, we write $X \sim \text{Poisson}(\lambda)$.
+			\end{definition}
+
+			% Poisson distribution appears naturally as an approximation of a binomail distribution when the parameter n is large and the parameter p is small
+			\begin{proposition}
+				(\mydef{Poisson approximation of the binomail}). Let $\lambda > 0$. For every $n \geq 1$, consider a r.v. $X_n \sim \text{Bin}(n, \frac{\lambda}{n})$. Then
+				$$
+					\forall k \in \mathbb{N} \quad \lim\limits_{n \to \infty} \prob{X_n = k} = \prob{N = k}
+				$$
+				where $N$ is a Poisson r.v. with parameter $\lambda$.
+			\end{proposition}
+
+
+		\subsection{Continous random variables}
+
 
 
 	
