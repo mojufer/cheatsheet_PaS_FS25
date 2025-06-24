@@ -69,6 +69,7 @@
 %\newcommand{\Fa}{\mathcal{F}}
 \newcommand{\Fb}{\pazocal{F}}
 \newcommand{\Pb}{\pazocal{P}}
+\newcommand{\Ub}{\pazocal{U}}
 
 \newcommand{\mydef}[1]{\textcolor{magenta}{\textbf{#1}}}
 \newcommand{\prob}[1]{\mathbb{P}\left[ #1 \right]}
@@ -77,6 +78,7 @@
 \DeclarePairedDelimiter\norm{\lVert}{\rVert}%
 
 \MakeOuterQuote{"}
+
 
 
 \author{Marc-Olivier Jufer \\ \href{mailto:mjufer@ethz.ch}{mjufer@ethz.ch}}
@@ -418,9 +420,9 @@
 				 	$$
 				 \end{proposition}
 				 
-				 \begin{proposition}
+				 \begin{proposition} \label{FX-conditions}
 				 	Let $X$ be a r.v. on some probability space $(\Omega, \Fb, \mathbb{P})$. The distribution function $F = F_X : \mathbb{R} \to \left[0,1\right]$ of $X$ satisfies the following properties :
-				 	\begin{enumerate}[label=\roman*.]
+					\begin{enumerate}[label=\roman*.] \label{F_3points}
 				 		\item $F$ is nondecreasing
 				 		\item $F$ is right continuous\footnote{i.e. $F(a) = \lim_{h \downarrow 0}F(a+h)$ for every $a \in \mathbb{R}$}
 				 		\item $\lim\limits_{a \rightarrow -\infty} F(a) = 0$ and $\lim\limits_{a \rightarrow \infty} F(a) = 1$
@@ -473,7 +475,141 @@
 						\phi(X_1, \ldots, X_n) := \phi \circ (X_1, \ldots, X_n)
 					$$
 				\end{definition} 
+
+			
+			\subsection{Construction of random variables}
+				
+				% Bernoulli random variables
+				\begin{definition}
+					Let $p \in \left[0,1\right]$. A r.v. $X$ is said to be a \mydef{Bernoulli r.v. with parameter $p$} if 
+					$$
+					\prob{X = 0} = 1-p \quad \text{and} \quad \prob{X = 1} = p
+					$$
+				In this case, we write $X \sim \text{Ber}(p)$.
+				\end{definition}
+
+				% Existence theorem of Kolmogorov
+				\begin{proposition}
+					(\mydef{Existence theorem of Kolmogorov}). There exists a probability space $(\Omega, \Fb, \mathbb{P})$ and an infinite sequence of r.v. $X_1, X_2, \ldots$ (on this probability space) that is an iid sequence of Bernoulli r.v. with parameter $1/2$.
+				\end{proposition}
+
+				% Uniform random variable
+				\begin{proposition}
+					A r.v. $U$ is said to be \mydef{uniform r.v. in $\left[0,1\right]$} if its distribution function is equal to 
+					$$
+					F_U(x) = \begin{cases}
+						0 \quad x < 0 \\
+						x \quad 0 \leq x \leq 1 \\
+						1 \quad x > 1
+					\end{cases}
+					$$
+					In this csae, we write $U \sim \Ub (\left[0,1\right])$.
+				\end{proposition}
+
+				% Distribution functions of benroulli and uniform random variables
+				\begin{figure}[H] 
+					\includegraphics[width=\linewidth]{bernoulli_uniform_rv.png}
+					\caption{Left: distribution function of a Bernoulli r.v. with parameter $p$. Right: distribution function of a uniform r.v. in $\left[0,1\right]$.}
+				\end{figure}
+
+				\begin{proposition}
+					The mapping $Y : \Omega \to \left[0,1\right]$ defined by $Y(\omega) = \sum_{n=1}^{\infty}2^{-n}X_n(\omega)$ is a uniform r.v. in $\left[0,1\right]$.
+				\end{proposition}
+
+				% Generalized inverse
+				\begin{definition}
+					The \mydef{generalized inverse} of $F$\footnote{\label{note3}satifying prop. \ref{F_3points}} is the mapping $F^{-1} : (0,1) \to \mathbb{R}$ defined by
+					$$
+						\forall \alpha \in (0,1) \quad F^{-1}(\alpha) = \text{inf}\{x \in \mathbb{R} : F(x) \geq \alpha\}
+					$$
+				\end{definition}
+
+				\begin{intuition}
+					By definition of the infimum and using right continuity of $F$, we have $\forall x \in \mathbb{R}$ and $\forall \alpha \in (0,1)$
+					$$
+						(F^{-1}(\alpha) \leq x) \Longleftrightarrow (\alpha \leq F(x))
+					$$
+				\end{intuition}
+
+				% Inverse transform sampling
+				\begin{proposition}
+					(\mydef{Inverse transform sampling}). Let $F : \mathbb{R} \to \left[0,1\right]$.\footnote{See footnote \ref{note3}} Let $U$ be a uniform r.v. in $\left[0,1\right]$. Then the r.v. $X = F^{-1}(U)$ has distribution $F_X = F$.
+				\end{proposition}
+
+				% General sequence of independent random variables
+				\begin{proposition}
+					Let $F_1, F_2, \ldots$ be a sequence of functions $\mathbb{R} \to \left[0,1\right]$.\footnote{See footnote \ref{note3}} Then there exist a probability space $(\Omega, \Fb, \mathbb{P})$ and a sequence of independent r.v. $X_1, X_2, \ldots$ on this probability space s.t.
+					\begin{itemize}
+						\item for every $i$ $X_i$ has distribution function $F_i$ (i.e. $\forall x \prob{X_1 \leq x} = F_i(x)$)
+						\item $X_1, X_2, \ldots$ are independent
+					\end{itemize}
+				\end{proposition}
+
+
+	\section{Discrete and continuous r.v.}
+		\subsection{Discontinuity / continuity points of $F$}
+			
+			% Probability of a given value
+			\begin{proposition}
+				Let $X : \Omega \to \mathbb{R}$ be a r.v. with distribution function $F$. Then for every $a$ in $\mathbb{R}$ we have
+				$$
+					\prob{X = a} = F(a) - F(a-)
+				$$
+				where $F(a-) := \lim_{h \downarrow 0}F(a-h)$.
+			\end{proposition}
+
+			\begin{intuition}
+				Fix $a \in \mathbb{R}$
+				\begin{itemize}[label=$\rightarrow$]
+					\item If $F$ is not continuous at a point $a \in \mathbb{R}$, then the "jump size" $F(a) - F(a-)$ is equal to the probability that $X = a$
+					\item If $F$ is continuous at a point $a \in \mathbb{R}$, then $\prob{X = a} = 0$
+				\end{itemize}
+			\end{intuition}
+
 	
+		\subsection{Almost sure events}
+			
+			% almost surely
+			\begin{definition}
+				Let $A \in \Fb$ be an event. We say that $A$ occurs \mydef{almost surely} (\mydef{a.s.}) if $\prob{A} = 1$.
+			\end{definition}
+
+		
+		\subsection{Discrete random variables}
+
+			% Discrete random variables
+			\begin{definition}
+				A r.v. $X : \Omega \to \mathbb{R}$ is said to be \mydef{discrete} if there exists some set $W \subset \mathbb{R}$ finite or countable s.t. $X \in W \quad \text{a.s.}$.
+			\end{definition}
+
+			% Distribution of discrete random variables
+			\begin{definition}
+				Let X be a discrete r.v. taking some values in some finite or countable set $W \subset \mathbb{R}$. The \mydef{distribution of} $X$ is the sequence of numbers $(p(x))_{x \in W}$ defined by 
+				$$
+					\forall x \in W \quad p(x) := \prob{X = x}
+				$$
+			\end{definition}
+
+			\begin{proposition}
+				The distribution $(p(x))_{x \in W}$ of a discrete r.v. satisfies $\sum_{x \in W} p(x) = 1$.
+			\end{proposition}
+
+			\begin{proposition}
+				Let $X$ be a discrete r.v. with values in a finite or countable set $W$ almost surely, and distribution $p$. Then the distribution function of $X$ is given by
+				$$
+				\forall x \in \mathbb{R} \quad F_X(x) = \sum_{\substack{y \leq x \\ y \in W}} p(y)
+				$$
+			\end{proposition}
+
+			\begin{intuition}
+				$W = \{\text{positions of the jumps of } F_X\}$,\\
+				$p(x) = \text{"height of the jump" at } x \in W$.
+			\end{intuition}
+
+
+		\subsection{Examples of discrete random variables}
+
+
 	
 \end{multicols}	
 \end{document}
