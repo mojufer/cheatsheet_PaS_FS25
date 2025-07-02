@@ -71,9 +71,11 @@
 \newcommand{\Pb}{\pazocal{P}}
 \newcommand{\Ub}{\pazocal{U}}
 \newcommand{\Cb}{\pazocal{C}}
+\newcommand{\Nb}{\pazocal{N}}
 
 \newcommand{\mydef}[1]{\textcolor{magenta}{\textbf{#1}}}
 \newcommand{\prob}[1]{\mathbb{P}\left[ #1 \right]}
+\newcommand{\expec}[1]{\mathbb{E}\left[ #1 \right]}
 
 \DeclarePairedDelimiter\abs{\lvert}{\rvert}%
 \DeclarePairedDelimiter\norm{\lVert}{\rVert}%
@@ -705,6 +707,217 @@
 				$$
 				and setting arbitrary values at $x_1, \ldots, x_{n-1}$.
 			\end{proposition}
+
+
+		\subsection{Examples of continuous random variables}
+				
+			% Uniform distribution in [a,b], a<b
+			\begin{definition}
+				A continuous r.v. $X$ is said to be \mydef{uniform in $\left[a,b\right]$} if its density is equal to 
+				$$
+					f_{a,b}(x) = \begin{cases}
+						\frac{1}{b-a} \quad x \in \left[a,b\right], \\
+						0 						\quad x \notin \left[a,b\right]
+					\end{cases}
+				$$
+				In this case, we write $X \sim \Ub(\left[a,b\right])$.
+			\end{definition}
+
+			% Exponential distribution with \lambda > 0
+			\begin{definition}
+				A continuous r.v. $T$ is said to be \mydef{exponential with parameter $\lambda > 0$} if its density is equal to 
+				$$
+					f_\lambda(x) = \begin{cases}
+						\lambda e^{-\lambda x} \quad x \geq 0, \\
+						0 										 \quad x < 0
+					\end{cases}
+				$$
+				In this case, we write $T \sim \text{Exp}(\lambda)$.
+			\end{definition}
+
+			% Normal distribution with parameters m and \sigma^2 > 0
+			\begin{definition}
+				A continuous r.v. $X$ is said to be \mydef{normal with parameters $m$ and $\sigma^2 > 0$} if its density is equal to 
+				$$
+					f_{m,\sigma}(x) = \frac{1}{\sqrt{2 \pi \sigma^2}} e^{\frac{(x-m)^2}{2 \sigma^2}}
+				$$
+				In this case, we write $X \sim \Nb(m,\sigma^2)$.
+			\end{definition}
+
+
+	\section{Expectation}
+		\subsection{Expectation for general r.v.}
+			\begin{definition}
+				Let $X : \Omega \to \mathbb{R}_+$ be a r.v. with nonnegative values. The \mydef{expectation} of $X$ is defined as 
+				$$
+					\expec{X} = \int_0^\infty (1 - F_X(x)) dx
+				$$
+			\end{definition}
+
+			\begin{proposition}
+				Let $X$ be a nonnegative r.v. Then we have $\expec{X} \geq 0$, with equality iff $X=0$ almost surely.
+			\end{proposition}
+
+			\begin{definition}
+				Let $X$ be a r.v. If $\expec{\lvert X \lvert} < \infty$, then the expectation of $X$ is defined by $\expec{X} = \expec{X_+} - \expec{X_-}$, where $X_+$ and $X_-$ are the positive and negative parts of $X$ defined by $X_+(\omega) = \begin{cases} X(\omega) \quad \text{if } X(\omega) \geq 0, \\ 0 \quad \text{if } X(\omega) < 0,\end{cases}$ and $X_-(\omega) = \begin{cases} -X(\omega) \quad \text{if } X(\omega) \leq 0, \\ 0 \quad \text{if } X(\omega) > 0.\end{cases}$
+			\end{definition}
+
+
+		\subsection{Expectation of a discrete r.v.}
+			\begin{proposition}
+				Let $X : \Omega \to \mathbb{R}$ be a discrete r.v. with values in $W$ (finite or countable) almost surely. We have
+				$$
+					\expec{X} = \sum_{x \in W} x \cdot \prob{X = x}
+				$$
+				provided the sum is well defined.
+			\end{proposition}
+
+			\begin{proposition}
+				Let $X : \Omega \to \mathbb{R}$ be a discrete r.v. with values in $W$ (finite or countable) almost surely. For every $\phi : \mathbb{R} \to \mathbb{R}$, we have
+				$$
+					\expec{\phi(X)} = \sum_{x \in W} \phi(x) \cdot \prob{X = x}
+				$$
+				provided the sum is well defined.
+			\end{proposition}
+
+
+		\subsection{Expectation of a continuous r.v.}
+			\begin{proposition}
+				Let $X$ be a contiuous r.v. with density $f$. Then we have 
+				$$
+					\expec{X} = \int_{-\infty}^\infty x \cdot f(x) dx
+				$$
+				provided the integral is well defined.
+			\end{proposition}
+
+			\begin{proposition}
+				Let $X$ be a continuous r.v. with density $f$. Let $\phi : \mathbb{R} \to \mathbb{R}$ be s.t. $\phi(X)$ is a r.v. Then we have
+				$$
+					\expec{\phi(X)} = \int_{-\infty}^\infty \phi(x) f(x) dx
+				$$
+				provided the integral is well defined.
+			\end{proposition}
+
+
+		\subsection{Calculus}
+			\begin{proposition}
+				(\mydef{Linearity of the expectation}). Let $X,Y : \Omega \to \mathbb{R}$ be r.v.'s, let $\lambda \in \mathbb{R}$. Provided the expectations are well defined, we have 
+				\begin{enumerate}
+					\item $\expec{\lambda \cdot X} = \lambda \cdot \expec{X}$
+					\item $\expec{X + Y} = \expec{X} + \expec{Y}$
+				\end{enumerate}
+			\end{proposition}
+
+			\begin{proposition}
+				Let $X,Y$ be two r.v. If $X$ and $Y$ are independent, then $\expec{XY} = \expec{X} \expec{Y}$.
+			\end{proposition}
+
+
+		\subsection{Tailsum formulas}
+			\begin{proposition}
+				(\mydef{Tailsum formula for nonnegative r.v.'s}). Let $X$ be a r.v., s.t. $X \geq 0$ almost surely. Then we have $\expec{X} = \int_0^\infty \prob{X > x} dx$.
+			\end{proposition}
+
+			\begin{proposition}
+				(\mydef{Tailsum formula for discrete r.v.'s}). Let $X$ be a discrete r.v. taking values in $\mathbb{N} = \{0,1,2,\ldots\}$. Then
+				$
+					\expec{X} = \sum_{n=1}^\infty \prob{X \geq n}
+				$.
+			\end{proposition}
+
+
+		\subsection{Characterizations via expecations}
+			\begin{proposition}
+				Let $X$ be a r.v. Let $f : \mathbb{R} \to \mathbb{R}$ s.t. $\int_{-\infty}^{+\infty} f(x) dx = 1$. then the following are equivalent :
+				\begin{enumerate}[label=\roman*.]
+					\item $X$ is continuous with density $f$,
+					\item For every function $\phi : \mathbb{R} \to \mathbb{R}$ piecwise continuous, bounded : $\expec{\phi(X)} = \int_{-\infty}^\infty \phi(x) f(x) dx$
+				\end{enumerate}
+			\end{proposition}
+
+			\begin{proposition}
+				Let $X,Y$ be two discrete r.v.'s. Then the following are equivalent 
+				\begin{enumerate}[label=\roman*.]
+					\item $X,Y$ are independent
+					\item For every $\phi : \mathbb{R} \to \mathbb{R}$, $\psi : \mathbb{R} \to \mathbb{R}$ piecewise contiuous, bounded : $\expec{\phi(X)\psi(Y)} = \expec{\phi(X)} \expec{\psi(Y)}$.
+				\end{enumerate}
+			\end{proposition}
+
+			\begin{proposition}
+				Let $X_1, \ldots, X_n$ be $n$ r.v.'s. Then the following are equivalent
+				\begin{enumerate}[label=\roman*.]
+					\item $X_1, \ldots, X_n$ are independent
+					\item For every $\phi_1 : \mathbb{R} \to \mathbb{R}, \ldots, \phi_n : \mathbb{R} \to \mathbb{R}$ piecewise continuous, bounded : $\expec{\phi_1(X_1) \cdots \phi_n(X_n)} = \expec{\phi_1(X_1)} \cdots \expec{\phi_n(X_n)}$.
+				\end{enumerate}
+			\end{proposition}
+
+
+		\subsection{Inequalities}
+			% Monotonicity
+			\begin{proposition}
+				(\mydef{Monotonicity}). Let $X,Y$ be two r.v.'s s.t. $X \leq Y$ a.s. Then
+				$
+					\expec{X} \leq \expec{Y}
+				$,
+				provided the two expectations are well defined.
+			\end{proposition}
+
+			% Markov's inequality
+			\begin{proposition}
+				(\mydef{Markov's inequality}). Let $X$ be a nonnegative r.v. Then for every $a > 0$, we have 
+				$$
+					\prob{X \geq a} \leq \frac{\expec{X}}{a}
+				$$
+			\end{proposition}
+
+			% Jensen's inequality
+			\begin{proposition}
+				(\mydef{Jensen's inequality}). Let $X$ be a r.v. Let $\phi : \mathbb{R} \to \mathbb{R}$ be a convex function. If $\expec{\phi(X)}$ and $\expec{X}$ are well defined, then
+				$$
+					\phi(\expec{X}) \leq \expec{\phi(X)}
+				$$
+			\end{proposition}
+
+
+		\subsection{Variance}
+			% Variance of X
+			\begin{definition}
+				Let $X$ be a variable s.t. $\expec{X^2} < \infty$. The \mydef{variance of $X$} is defined by 
+				$$
+					\sigma^2_X = \expec{(X - m)^2}, \quad \text{where } m = \expec{X}
+				$$
+				The square root $\sigma_X$ of the variance is called the \mydef{standard deviation of $X$}.
+			\end{definition}
+
+			\begin{proposition}
+				Let $X$ be a r.v. s.t. $\expec{X^2} < \infty$. Then for every $a \geq 0$ we have 
+				$$
+					\prob{\lvert X - m\lvert \geq a} \leq \frac{\sigma^2_X}{a^2}, \quad \text{where } m = \expec{X}
+				$$
+			\end{proposition}
+
+			\begin{proposition}
+				(\mydef{Basic properties of the variance}).
+				\begin{enumerate}
+					\item Let $X$ be a r.v. with $\expec{X^2} < \infty$. Then $\sigma^2_X = \expec{X^2} - \expec{X}^2$.
+					\item Let $X$ be a r.v. with $\expec{X^2} < \infty$, let $\lambda \in \mathbb{R}$. Then $\sigma^2_{\lambda X} = \lambda^2 \cdot \sigma^2_X$.
+					\item Let $X_1, \ldots, X_n$ be $n$ pairwise independent r.v.'s and $S = X_1 + \ldots + X_n$. Then $\sigma^2_S = \sigma^2_{X_1} + \ldots + \sigma^2_{X_n}$.
+				\end{enumerate}
+			\end{proposition}
+
+
+		\subsection{Covariance}
+			% Covariance
+			\begin{definition}
+				Let $X,Y$ be two r.v.'s. Assume that $\expec{X^2} < \infty$ and $\expec{Y^2} < \infty$ (finite second moment). We define the \mydef{covariance between $X$ and $Y$} as 
+				$$
+					\text{Cov}(X,Y) = \expec{XY} - \expec{X}\expec{Y}.
+				$$
+			\end{definition}
+
+			\begin{intuition}
+				With $X$ and $Y$ independent : $\text{Cov}(X,Y) = 0$.
+			\end{intuition}
 
 
 
