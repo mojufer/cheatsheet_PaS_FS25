@@ -919,6 +919,140 @@
 				With $X$ and $Y$ independent : $\text{Cov}(X,Y) = 0$.
 			\end{intuition}
 
+	
+	\section{Joint distribution}
+		\subsection{Discrete joint distributions}
+			\begin{definition}
+				Let $X_1, \ldots, X_n$ be $n$ discrete r.v.'s with $X_i \in W_i$ almost surely, for some $W_i \subset \mathbb{R}$ finite or countable. The \mydef{joint distribution} of $(X_1, \ldots, X_n)$ is the collection $p = (p(x_1, \ldots, x_n))_{x_1 \in W_1, \ldots, x_n \in W_n}$ defined by
+				$$
+					p(x_1, \ldots, x_n) = \prob{X_1 = x_1, \ldots, X_n = x_n}
+				$$
+			\end{definition}
+
+			\begin{proposition}
+				The joint distribution of some r.v.'s $X_1, \ldots, X_n$ satisfies 
+				$
+					\sum_{x_1 \in W_1, \ldots, x_n \in W_n} p(x_1, \ldots, x_n) = 1
+				$.
+			\end{proposition}
+
+			\begin{proposition}
+				Let $n \geq 1$ and $\phi : \mathbb{R}^n \to \mathbb{R}$ be an arbitrary function. Let $X_1, \ldots, X_n$ be $n$ discrete r.v.'s on $(\Omega, \Fb, \mathbb{P})$ with respective values in some finite or countable sets $W_1, \ldots, W_n$ a.s. Then $Z = \phi(X_1, \ldots, X_n)$ is a discrete r.v. with values in $W = \phi(W_1 \times \ldots \times W_n)$ a.s. and with distribution given by
+				$$
+				\forall z \in W \quad \prob{Z = z} = \sum\limits_{\substack{x_1 \in W, \ldots, x_n \in W_n\\ \phi(x_1, \ldots, x_n) = z}} \prob{X_1 = x_1, \ldots, X_n = x_n}
+				$$
+			\end{proposition}
+
+			% Marginal distributions
+			\begin{proposition}
+				(\mydef{Marginal distributions}). Let $X_1, \ldots, X_n$ be $n$ discrete r.v.'s with joint distribution $p = (p(x_1, \ldots, x_n))_{x_1 \in W_1, \ldots, x_n \in W_n}$. For every $i$, we have $\forall z \in W_i
+					\prob{X_1 = z} = \sum\limits_{x_1, \ldots, x_{i-1}, x_{i+1}, \ldots, x_n} p(x_1, \ldots, x_{i-1}, z, x_{i+1}, \ldots, x_n)
+				$
+			\end{proposition}
+
+			% Expectation of the image
+			\begin{proposition}
+				(\mydef{Expectation of the image}).
+				Let $X_1, \ldots$, $X_n$ be $n$ discrete r.v.'s with joint distribution $p = (p(x_1, \ldots, x_n))_{x_1 \in W_1, \ldots, x_n \in W_n}$. Let $\phi : \mathbb{R}^n \to \mathbb{R}$, then
+				$$
+					\expec{\phi(X_1, \ldots, X_n)} = \sum_{x_1, \ldots, x_n} \phi(x_1, \ldots, x_n)p(x_1, \ldots, x_n)
+				$$
+				whenever the sum is well-defined.
+			\end{proposition}
+
+			% Independence
+			\begin{proposition}
+				(\mydef{Independence}).
+				Let $X_1, \ldots, X_n$ be $n$ discrete r.v.'s with joint distribution $p = p(x_1, \ldots, x_n))_{x_1 \in W_1, \ldots, x_n \in W_n}$. The following are equivalent
+				\begin{enumerate}[label=\roman*.]
+					\item $X_1, \ldots, X_n$ are independent
+					\item $p(x_1, \ldots, x_n) = \prob{X_1 = x_1} \cdots \prob{X_n = x_n}$ for every $x_i \in W_i, \ldots, x_n \in W_n$
+				\end{enumerate}
+			\end{proposition}
+
+
+		\subsection{Continuous joint distribution}
+			% Continuous joint distribution
+			\begin{definition}
+				Let $n \geq 1$, some r.v.'s $X_n, \ldots, X_n : \Omega \to \mathbb{R}$ have a \mydef{continuous joint distribution} if there exists a function $f : \mathbb{R}^n \to \mathbb{R}_+$ s.t. $\prob{X_1 \leq a_1, \ldots, X_n \leq a_n}$
+				$$
+				 = \int_{-\infty}^{a_1} \cdots \int_{-\infty}^{a_n} f(x_1, \ldots, x_n)dx_n \cdots dx_1
+				$$
+				for every $a_1, \ldots, a_n \in \mathbb{R}$. A function $f$ as above is called a \mydef{joint density of $(X,Y)$}.
+			\end{definition}
+
+			\begin{intuition}
+				$f(x_1, \ldots, x_n)dx_1 \cdots dx_n$ represents the probability that the random vector $(X_1, \ldots, X_n)$ lies in the small region $\left[x_1, x_1 + dx_1\right] \times \ldots \times \left[x_n, x_n + dx_n\right]$.  
+			\end{intuition}
+
+			% Expectation of the image
+			\begin{proposition}
+				(\mydef{Expectation of the image}).
+				Let $\phi : \mathbb{R}^n \to \mathbb{R}$. If $X_1, \ldots, X_n$ have joint density $f$, then the expectation of the r.v. $Z = \phi(X_1, \ldots, X_n)$ can be calculated by the formula $\expec{\phi(X_1, \ldots, X_n)}$
+				$$
+					= \int_{-\infty}^\infty \cdots \int_{-\infty}^\infty \phi(x_1, \ldots, x_n) \cdot f(x_1, \ldots, x_n) dx_n \cdots dx_1
+				$$
+			\end{proposition}
+
+
+		\subsection{Marginal densities}
+			\begin{proposition}
+				Let $X_1, \ldots, X_n$ be $n$ r.v.'s with a joint density $f = f_{X_1, \ldots, X_n}$. Then for every $i$, $X_i$ is a continuous r.v. with density $f_i$ given by $f_i(z)$
+				$$
+				= \int\limits_{(x_1, \ldots, x_{i-1}, x_{i+1}, \ldots, x_n) \in \mathbb{R}^{n-1}}
+						f(x_1, \ldots, x_{i-1}, z, x_{i+1}, \ldots, x_n) 
+				$$
+				$$
+					dx_1 \cdots dx_{i-1} dx_{i+1} \cdots dx_n
+				$$
+			\end{proposition}
+
+			% Independence for continuous r.v.'s
+			\begin{proposition}
+				(\mydef{Independence for continuous r.v.'s}).
+				Let $X_1, \ldots, X_n$ be $n$ continuous r.v.'s with respective densities $f_1, \ldots, f_n$. The following are equivalent
+				\begin{enumerate}[label=\roman*.]
+					\item $X_1, \ldots, X_n$ are independent
+					\item $X_1, \ldots, X_n$ are jointly continuous with joint density $f(x_1, \ldots, x_n) = f_1(x_1) \cdots f_n(x_n)$
+				\end{enumerate}
+			\end{proposition}
+
+
+	\section{Asymptotic results}
+		For this section, fix a probability space $(\Omega, \Fb, \mathbb{P}$ and an infinite sequence of i.i.d. r.v.'s $X_1, X_2, \ldots$. For every $n$, consider the partial sum $S_n = X_1 + \ldots + X_n$.
+		\begin{definition}
+			The r.v. defined by $\frac{S_n}{n} = \frac{X_1 + \ldots + X_n}{n}$ (when $n$ is large) is called the \mydef{empirical average}.
+		\end{definition}
+
+
+		\subsection{Law of large numbers}
+			\begin{proposition}
+				Assume that $\expec{\lvert X_1 \lvert} < \infty$. Defining $m = \expec{X_1}$ we have 
+				$
+					\lim\limits_{n \to \infty} \frac{X_1 + \ldots + X_n}{n} = m
+				$ a.s.
+			\end{proposition}
+
+
+		\subsection{Monte-Carlo integration}
+
+
+		\subsection{Convergence in distribution}
+			\begin{definition}
+				Let $(X_n)_{n \in \mathbb{N}}$ and $X$ be some r.v.'s. We write $X_n \approx X$ as $n \to \infty$, if for every $x \in \mathbb{R}$ : $\lim\limits{n \to \infty} \prob{X_n \leq x} = \prob{X \leq x}$
+			\end{definition}
+
+		
+		\subsection{Central limit theorem}
+			\begin{proposition}
+				(\mydef{Central limit theorem}).
+			Assume that $\expec{X_1^2}$ is well defined and finite. Defining $m = \expec{X_1}$ and $\sigma^2 = \text{Var}(X_1)$, we have 
+				$$
+				\prob{\frac{S_n - n\cdot m}{\sqrt{\sigma^2 n}} \leq a} \underset{n \to \infty}{\longrightarrow} \Phi(a) = \frac{1}{\sqrt{2\phi}} \int_{-\infty}^a e^{-x^2 / 2} dx
+				$$
+				for every $a \in \mathbb{R}$.
+			\end{proposition}
+
 
 
 	

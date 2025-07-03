@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1751455823.01789 "cheatsheet.tex" "cheatsheet.pdf" "cheatsheet" 1751455825.01605 0
+["pdflatex"] 1751542093.98835 "cheatsheet.tex" "cheatsheet.pdf" "cheatsheet" 1751542096.06471 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1742685315 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1742685315 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm" 1742685315 2796 d37c29814a6717720ee1a7c9a0b2c3b8 ""
@@ -57,6 +57,7 @@
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1742685315 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1742685315 37944 359e864bd06cde3b1cf57bb20757fb06 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1742685315 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb" 1742685315 35309 940e81a5b9e04201a07e8b33a3ae6e64 ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb" 1742685315 138258 6525c253f16cededa14c7fd0da7f67b2 ""
   "/usr/share/texmf-dist/fonts/vf/public/mathpazo/zplmr7y.vf" 1742685315 1372 31129ac1f6b6f62aaec24c8fed41b02b ""
   "/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1742685315 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -207,9 +208,9 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1749641983 5311557 9da84c45f5b388655502706482323571 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1749641845 2008242 e00ce6b463c170e0f4839e5c8420cc10 ""
   "bernoulli_uniform_rv.png" 1750755138.44316 7987 c6d15448f5348375bbf95d9d417b0b1f ""
-  "cheatsheet.aux" 1751455824.7826 5152 926697cbdf860129516a969108210911 "pdflatex"
-  "cheatsheet.out" 1751455824.7836 5452 4c3313499125ee449f7679c31394b74e "pdflatex"
-  "cheatsheet.tex" 1751455822.6306 38659 727a78d2e57a710263d55710876f8e59 ""
+  "cheatsheet.aux" 1751542095.84162 6297 38a07d6606c7ed63ebe88ce531b06ebd "pdflatex"
+  "cheatsheet.out" 1751542095.84262 7001 7054ac319ab0f02611c49afa1afcfd8d "pdflatex"
+  "cheatsheet.tex" 1751542093.48462 45037 dea74659b6644210fd2e6ee1dc403ffa ""
   "distribution_function.png" 1749218150 3676 c3dc27e3feb4ca9aed2c7809cb56941f ""
   "set-operations-representation.png" 1748426420 43778 f3d015a76e5bb950289194730de7e100 ""
   "set-relations-representation.png" 1748426928 50477 11b21fbf175ebb4f2e4331e37e288149 ""
