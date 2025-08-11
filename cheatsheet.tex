@@ -16,6 +16,7 @@
 \usepackage{mathtools}
 \usepackage{hyperref}
 \usepackage{enumitem}
+\usepackage{tikz}
 
 
 \definecolor{DarkGreen}{RGB}{1,100,32}
@@ -80,6 +81,13 @@
 \newcommand{\biast}[1]{\text{Bias}_{\theta}\left( #1 \right)}
 \newcommand{\mset}[1]{\text{MSE}_{\theta}\left( #1 \right)}
 \newcommand{\vart}[1]{\text{Var}_{\theta}\left[ #1 \right]}
+
+% TikZ settings for the grid
+\newcommand{\squaredpaper}{
+  \begin{tikzpicture}[remember picture, overlay]
+		\draw[very thin, gray] (current page.south west) grid[step=0.5cm] (current page.north east);  % Draw grid
+  \end{tikzpicture}
+}
 
 \DeclarePairedDelimiter\abs{\lvert}{\rvert}%
 \DeclarePairedDelimiter\norm{\lVert}{\rVert}%
@@ -1341,6 +1349,9 @@
 				\end{intuition}
 
 
+\newpage
+\squaredpaper
+\vfill
 
 
 	
