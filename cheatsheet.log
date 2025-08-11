@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.6.11)  3 JUL 2025 13:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.6.11)  11 AUG 2025 18:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -660,24 +660,24 @@ LaTeX Warning: Unused global option(s):
 (./cheatsheet.aux)
 \openout1 = `cheatsheet.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count350
@@ -731,116 +731,316 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package csquotes Info: Making character " active on input line 91.
-Package hyperref Info: Link coloring OFF on input line 91.
+Package csquotes Info: Making character " active on input line 95.
+Package hyperref Info: Link coloring OFF on input line 95.
 (./cheatsheet.out) (./cheatsheet.out)
 \@outlinefile=\write4
 \openout4 = `cheatsheet.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 94.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 98.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 94.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 98.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OMS+rsfs on input line 94.
+LaTeX Font Info:    Trying to load font information for OMS+rsfs on input line 98.
  (/usr/share/texmf-dist/tex/latex/calrsfs/OMSrsfs.fd)
-LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 111.
+LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 115.
  (/usr/share/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-<set-operations-representation.png, id=165, 764.8575pt x 408.52625pt>
+<set-operations-representation.png, id=218, 764.8575pt x 408.52625pt>
 File: set-operations-representation.png Graphic file (type png)
 <use set-operations-representation.png>
-Package pdftex.def Info: set-operations-representation.png  used on input line 204.
+Package pdftex.def Info: set-operations-representation.png  used on input line 208.
 (pdftex.def)             Requested size: 260.78925pt x 139.2898pt.
-<set-relations-representation.png, id=166, 766.865pt x 325.215pt>
+<set-relations-representation.png, id=219, 766.865pt x 325.215pt>
 File: set-relations-representation.png Graphic file (type png)
 <use set-relations-representation.png>
-Package pdftex.def Info: set-relations-representation.png  used on input line 216.
+Package pdftex.def Info: set-relations-representation.png  used on input line 220.
 (pdftex.def)             Requested size: 260.78925pt x 110.59644pt.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./set-operations-representation.png (PNG copy)> <./set-relations-representation.png (PNG copy)>] [2]
-<distribution_function.png, id=228, 432.61626pt x 153.57375pt>
+<distribution_function.png, id=280, 432.61626pt x 153.57375pt>
 File: distribution_function.png Graphic file (type png)
 <use distribution_function.png>
-Package pdftex.def Info: distribution_function.png  used on input line 414.
+Package pdftex.def Info: distribution_function.png  used on input line 418.
 (pdftex.def)             Requested size: 260.78925pt x 92.58081pt.
-<bernoulli_uniform_rv.png, id=230, 659.46375pt x 167.62625pt>
+<bernoulli_uniform_rv.png, id=282, 659.46375pt x 167.62625pt>
 File: bernoulli_uniform_rv.png Graphic file (type png)
 <use bernoulli_uniform_rv.png>
-Package pdftex.def Info: bernoulli_uniform_rv.png  used on input line 514.
+Package pdftex.def Info: bernoulli_uniform_rv.png  used on input line 518.
 (pdftex.def)             Requested size: 260.78925pt x 66.28964pt.
  [3 <./distribution_function.png (PNG copy)>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 553.
+(hyperref)                removing `math shift' on input line 557.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 553.
+(hyperref)                removing `math shift' on input line 557.
 
 [4 <./bernoulli_uniform_rv.png (PNG copy)>] [5]
-Overfull \hbox (7.55069pt too wide) detected at line 943
+Overfull \hbox (7.55069pt too wide) detected at line 947
 \OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 z \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 W \U/msb/m/n/10 P [] \OT1/cmr/m/n/10 = [] \U/msb/m/n/10 P []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 948--951
+Underfull \hbox (badness 10000) in paragraph at lines 952--955
 [][]\OT1/cmr/bx/n/10 Prop 5.3. []\OT1/cmr/m/n/10 ([]\OT1/cmr/bx/n/10 Marginal dis-tri-bu-tions[]\OT1/cmr/m/n/10 ). Let
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 948--951
+Underfull \hbox (badness 10000) in paragraph at lines 952--955
 \OML/cmm/m/it/10 X[]; [] ; X[]$ \OT1/cmr/m/n/10 be $\OML/cmm/m/it/10 n$ \OT1/cmr/m/n/10 dis-crete r.v.'s with joint dis-tri-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 948--951
+Underfull \hbox (badness 10000) in paragraph at lines 952--955
 \OT1/cmr/m/n/10 bu-tion $\OML/cmm/m/it/10 p \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; [] ; x[]\OT1/cmr/m/n/10 ))[]$. For
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 948--951
+Underfull \hbox (badness 10000) in paragraph at lines 952--955
 \OT1/cmr/m/n/10 ev-ery $\OML/cmm/m/it/10 i$\OT1/cmr/m/n/10 , we have $\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 z \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 W[]\U/msb/m/n/10 P [] \OT1/cmr/m/n/10 =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 965--967
+Underfull \hbox (badness 10000) in paragraph at lines 969--971
 [][]\OT1/cmr/bx/n/10 Prop 5.5. []\OT1/cmr/m/n/10 ([]\OT1/cmr/bx/n/10 In-de-pen-dence[]\OT1/cmr/m/n/10 ). Let $\OML/cmm/m/it/10 X[]; [] ; X[]$
  []
 
 
-Underfull \hbox (badness 7168) in paragraph at lines 965--967
+Underfull \hbox (badness 7168) in paragraph at lines 969--971
 \OT1/cmr/m/n/10 be $\OML/cmm/m/it/10 n$ \OT1/cmr/m/n/10 dis-crete r.v.'s with joint dis-tri-bu-tion $\OML/cmm/m/it/10 p \OT1/cmr/m/n/10 =
  []
 
 [6]
+pdfTeX warning (ext4): destination with the same identifier (name{section.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1073 	\section{Basic concepts of an estimator}
+                                                
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.1.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1078 		\subsection{Definition of an estimator}
+                                                
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1080 				A
+            n \mydef{estimator} is a r.v. $T : \Omega \to \mathbb{R}$ of the...
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1093 ...\item \mydef{Last observation estimator}
+                                                   : $T^{(1)} = X_n$
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.1.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1099 		\subsection{Bias and mean squared error}
+                                                 
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1103 				A
+            n estimator $T$ is called \mydef{unbiased} for $\theta$ if, for ...
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1110 				F
+            or $\theta \in \Theta$, the \mydef{bias} of an estimator $T$ is ...
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.1.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1125 ...ion{Maximum likelihood estimation (MLE)}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1127 					F
+             or the observed sample $(x_1, \ldots, x_n)$, the \mydef{likelih...
+Overfull \hbox (7.28304pt too wide) detected at line 1134
+\OML/cmm/m/it/10 L\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; [] ; x[]\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 ^^R\OT1/cmr/m/n/10 ) = []
+ []
 
-[7] (./cheatsheet.aux)
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1138 					T
+             he \mydef{maximum likelihood estimator} of $\theta$ is defined as [7]
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.1.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1160 ...section{Models with multiple parameters}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{section.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1168 		\section{Confidence intervals}
+                                       
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.2.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1171 			\subsection{Definition}
+                                 
+pdfTeX warning (ext4): destination with the same identifier (name{definition.2.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1173 					L
+             et $\alpha \in [0,1]$. A \mydef{confidence interval} for $\thet...
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.2.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1180 			\subsection{Distribution statements}
+                                              
+pdfTeX warning (ext4): destination with the same identifier (name{definition.2.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1182 					A
+              continuous r.v. $X$ is said to be \mydef{chi-squared distribut...
+pdfTeX warning (ext4): destination with the same identifier (name{proposition.2.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1191 					(
+             \mydef{Sum of squares theorem}). If $X_1, X_2, \ldots, X_m$ are...
+pdfTeX warning (ext4): destination with the same identifier (name{definition.2.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1198 					A
+              continuous r.v. X is said to be \mydef{t-distributed} with $m$...
+pdfTeX warning (ext4): destination with the same identifier (name{proposition.2.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1206 					L
+             et $X$ and $Y$ be independent r.v. with $X \sim N(0,1)$ and $Y ...
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.2.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1214 ...al model with unknown variance and mean}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{definition.2.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1216 					\mydef{Sample mean}
+                                : $\bar{X} = \frac{1}{n} \sum^n_{i=1}X_i$ \\
+pdfTeX warning (ext4): destination with the same identifier (name{proposition.2.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1221 					I
+             f $X_1, \ldots, X_n$ are iid $\sim N(m, \sigma^2)$, then $\bar{...
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.2.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1225 ...ection{Approximate confidence intervals}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{section.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1233 		\section{Tests}
+                        
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.3.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1234 ...section{Null and alternative hypotheses}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.3.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1245 			\subsection{Tests and decisions}
+                                          
+pdfTeX warning (ext4): destination with the same identifier (name{definition.3.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1247 					A
+              \mydef{test} is a pair $(T, K)$, where
+Underfull \hbox (badness 10000) in paragraph at lines 1254--1255
+
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.3.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1263 ...subsection{Significance level and power}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{definition.3.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1265 					L
+             et $\alpha \in (0,1)$. A test $(T, K)$ is said to have \mydef{s... [8]
+pdfTeX warning (ext4): destination with the same identifier (name{definition.3.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1276 					T
+             he \mydef{power} of a test $(T, K)$ is the function
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.3.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1287 			\subsection{Construction of tests}
+                                            
+pdfTeX warning (ext4): destination with the same identifier (name{definition.3.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1291 					F
+             or every $x_1, \ldots, x_n$, the \mydef{likelihood ratio} is de...
+pdfTeX warning (ext4): destination with the same identifier (name{definition.3.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1303 					L
+             et $c \geq 0$. The \mydef{likelihood ratio test} with parameter...
+pdfTeX warning (ext4): destination with the same identifier (name{definition.3.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1307 					F
+             or composite hypotheses, the \mydef{generalized likelihood rati...
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.3.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1315 			\subsection{The p-value}
+                                  
+pdfTeX warning (ext4): destination with the same identifier (name{definition.3.7}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1319 					A
+              \mydef{family of tests} $(T, (K_t)_{t \geq 0})$ is said to be ...
+Overfull \hbox (14.48866pt too wide) detected at line 1326
+\OML/cmm/m/it/10 K[] \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10 t; \OMS/cmsy/m/n/10 1\OT1/cmr/m/n/10 ) [] \OML/cmm/m/it/10 K[] \OT1/cmr/m/n/10 = (\OMS/cmsy/m/n/10 ^^@1\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) []
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.3.8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1333 					L
+             et $H_0 : \theta = \theta_0$ be a simple null hypothesis and le...
+
+[9] (./cheatsheet.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `cheatsheet.out' has not changed.
-(rerunfilecheck)             Checksum: 7054AC319AB0F02611C49AFA1AFCFD8D;7001.
+(rerunfilecheck)             Checksum: EBF913182FD012724B551995C08CC18F;10169.
  ) 
 Here is how much of TeX's memory you used:
- 27016 strings out of 475171
- 522008 string characters out of 5767095
- 982831 words of memory out of 5000000
- 49414 multiletter control sequences out of 15000+600000
+ 27033 strings out of 475171
+ 522142 string characters out of 5767095
+ 982916 words of memory out of 5000000
+ 49419 multiletter control sequences out of 15000+600000
  572432 words of font info for 87 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  98i,13n,105p,547b,944s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on cheatsheet.pdf (7 pages, 442225 bytes).
+Output written on cheatsheet.pdf (9 pages, 465649 bytes).
 PDF statistics:
- 509 PDF objects out of 1000 (max. 8388607)
- 439 compressed objects within 5 object streams
- 172 named destinations out of 1000 (max. 500000)
- 345 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 582 PDF objects out of 1000 (max. 8388607)
+ 509 compressed objects within 6 object streams
+ 184 named destinations out of 1000 (max. 500000)
+ 481 words of extra memory for PDF output out of 10000 (max. 10000000)
 

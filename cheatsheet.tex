@@ -76,6 +76,10 @@
 \newcommand{\mydef}[1]{\textcolor{magenta}{\textbf{#1}}}
 \newcommand{\prob}[1]{\mathbb{P}\left[ #1 \right]}
 \newcommand{\expec}[1]{\mathbb{E}\left[ #1 \right]}
+\newcommand{\expect}[1]{\mathbb{E}_{\theta}\left[ #1 \right]}
+\newcommand{\biast}[1]{\text{Bias}_{\theta}\left( #1 \right)}
+\newcommand{\mset}[1]{\text{MSE}_{\theta}\left( #1 \right)}
+\newcommand{\vart}[1]{\text{Var}_{\theta}\left[ #1 \right]}
 
 \DeclarePairedDelimiter\abs{\lvert}{\rvert}%
 \DeclarePairedDelimiter\norm{\lVert}{\rVert}%
@@ -1052,6 +1056,290 @@
 				$$
 				for every $a \in \mathbb{R}$.
 			\end{proposition}
+
+
+
+
+% Statistics 
+\bigskip
+\noindent\rule{\linewidth}{1.5pt} % Thick horizontal line
+\begin{center}
+	\Large\bfseries Statistics 
+\end{center}
+
+\setcounter{section}{0}
+
+
+	\section{Basic concepts of an estimator}
+		We wish to estimate an unknown parameter $\theta$ based on a sample $X_1, X_2, \ldots, X_n$.
+
+		
+		% Estimator
+		\subsection{Definition of an estimator}
+			\begin{definition}
+				An \mydef{estimator} is a r.v. $T : \Omega \to \mathbb{R}$ of the form 
+				$$
+					T = t(X_1, X_2, \ldots, X_n)
+				$$
+				where $t : \mathbb{R}^n \to \mathbb{R}$ is a measurable function. Inserting the observed data 
+				$$
+					x_1, x_2, \ldots, x_n \ \text{with }x_i = X_i(\omega)\text{)}
+				$$
+				yields the \mydef{estimate} $t(x_1, \ldots, x_n)$ for $\theta$.
+			\end{definition}
+
+			\begin{definition}
+				\begin{enumerate}
+					\item \mydef{Last observation estimator} : $T^{(1)} = X_n$
+					\item \mydef{Sample mean estimator} : $T^{(2)} = \frac{1}{n} \sum^n_{i = 1} X_i$
+				\end{enumerate}
+			\end{definition}
+
+
+		\subsection{Bias and mean squared error}
+			The estimator $T$ is a random variable which distribution (under $\mathbb{P}_\theta$) depends on the unknown parameter $\theta$.
+
+			\begin{definition}
+				An estimator $T$ is called \mydef{unbiased} for $\theta$ if, for all $\theta \in \Theta$ :
+				$$
+					\expect{T} = \theta
+				$$
+			\end{definition}
+
+			\begin{definition}
+				For $\theta \in \Theta$, the \mydef{bias} of an estimator $T$ is defined as 
+				$$
+					\biast{T} = \expect{T} - \theta
+				$$
+				The \mydef{mean squared error} (MSE) is defined as 
+				$$
+					\mset{T} = \expect{(T - \theta)^2}
+				$$
+				For an unbiased estimator, the MSE equals the variance :
+				$$
+					\mset{T} = \vart{T} + (\biast{T})^2
+				$$
+			\end{definition}
+
+
+			\subsection{Maximum likelihood estimation (MLE)}
+				\begin{definition}
+					For the observed sample $(x_1, \ldots, x_n)$, the \mydef{likelihood} function is defined by
+					$$
+						L(x_1, \ldots, x_n ; \theta) = 
+							\begin{cases}
+								\prod^{n}_{i = 1} p_{X_i}(x_i ; \theta), \quad \text{if } X_i \text{ are discrete}\\
+								\prod^{n}_{i = 1} f_{X_i}(x_i ; \theta), \quad \text{if } X_i \text{ are continuous}
+							\end{cases}
+					$$
+				\end{definition}
+
+				\begin{definition}
+					The \mydef{maximum likelihood estimator} of $\theta$ is defined as 
+					$$
+						\hat{\theta}(x_1, \ldots, x_n) \in \arg\max_{\theta \in \Theta} L(x_1, \ldots, x_n ; \theta)
+					$$
+					In practice, one maximises the log-likelihood function $l(\theta ; x_1, \ldots, x_n) = \log L(x_1, \ldots, x_n ; \theta)$, and then obtains the estimator by replacing the data with the random variables : 
+					$$
+						T_{ML} = t_{ML}(X_1, \ldots, X_n)
+					$$
+				\end{definition}
+
+
+				\subsubsection{Application of the method}
+					The maximum likelihood method is a way to systematically determine an estimator.
+					\begin{enumerate}
+						\item Find the joint density / distribution of the random variables
+						\item Determine the \textbf{log-likelihood function} from it : $f(\theta) := \ln (L(x_1, \ldots, x_n ; \theta))$
+						\item Differentiate $f(\theta)$ with respect to $\theta$
+						\item Find the zero(s) of $f'(\theta)$
+						\item Show that $f''(\theta) < 0$ or use another argument to demonstrate that a maximum has been found (possibly check boundary points)
+					\end{enumerate}
+
+
+			\subsection{Models with multiple parameters}
+				Consider the parameter space $\Theta \subset \mathbb{R}^m$, where $m$ is the number of parameters. The stochastic model is given by a family of probability measures $(P_\theta)_{\theta in \Theta}$, and our goal is to estimate the vector 
+				$$
+					\theta = (\theta_1, \theta_2, \ldots, \theta_m).
+				$$
+				All previous definitions extend to this setting.
+
+
+		\section{Confidence intervals}
+			
+
+			\subsection{Definition}
+				\begin{definition}
+					Let $\alpha \in [0,1]$. A \mydef{confidence interval} for $\theta$ with confidence level $1-\alpha$ is a random interval $I = [A,B]$, with endpoints $A = a(X_1, \ldots, X_n), \ B = b(X_1, \ldots, X_n)$, where $a,b : \mathbb{R}^n \to \mathbb{R}$, s.t. for all $\theta \in \Theta$ 
+					$$
+						P_\theta[A \leq \theta \leq B] \geq 1 - \alpha
+					$$
+				\end{definition}
+
+
+			\subsection{Distribution statements}
+				\begin{definition}
+					A continuous r.v. $X$ is said to be \mydef{chi-squared distributed} with $m$ degrees of freedom if its density is given by 
+					$$
+					f_X(y) = \frac{1}{2^{m/2} \Gamma(m/2)} y^{\frac{m}{2} - 1} e^{-y/2}, \quad y \geq 0
+					$$
+					Where $\Gamma(v) = \int^\infty_0 t^{v-1}e^{-t}dt$ and for $n \in \mathbb{N}, \ \Gamma(n) = (n-1)!$\\
+					We write $X \sim \chi^2_m$.
+				\end{definition}
+
+				\begin{proposition}
+					(\mydef{Sum of squares theorem}). If $X_1, X_2, \ldots, X_m$ are iid $\sim N(0,1)$, then 
+					$$
+						Y = \sum^m_{i = 1} X^2_i \sim \chi^2_m
+					$$
+				\end{proposition}
+
+				\begin{definition}
+					A continuous r.v. X is said to be \mydef{t-distributed} with $m$ degrees of freedom if its density is given by 
+					$$
+						f_X(x) = \frac{\Gamma(\frac{m+1}{2})}{\sqrt{m\pi}\Gamma(\frac{m}{2})} \left( 1 + \frac{x^2}{m} \right)^{-\frac{m+1}{2}}, \quad x \in \mathbb{R}
+					$$
+					We write $X \sim t_m$.
+				\end{definition}
+
+				\begin{proposition}
+					Let $X$ and $Y$ be independent r.v. with $X \sim N(0,1)$ and $Y \sim \chi^2_m$. Then the quotient
+					$$
+						Z := \frac{X}{\sqrt{Y/m}}
+					$$
+					is t-distributed with $m$ degrees of freedom.
+				\end{proposition}
+
+
+			\subsection{Normal model with unknown variance and mean}
+				\begin{definition}
+					\mydef{Sample mean} : $\bar{X} = \frac{1}{n} \sum^n_{i=1}X_i$ \\
+					\mydef{Sample variance} : $S^2 = \frac{1}{n-1} \sum^n_{i+1}(X_i - \bar{X_n})^2$
+				\end{definition}
+
+				\begin{proposition}
+					If $X_1, \ldots, X_n$ are iid $\sim N(m, \sigma^2)$, then $\bar{X}_n$ and $S^2$ are independent.
+				\end{proposition}
+
+
+			\subsection{Approximate confidence intervals}
+				A general approximate approach is provided by the central limit theorem (CLT). Often, an estimator $T$ is a function of a sum, say, $T = \frac{1}{n} \sum^n_{i=1} Y_i$. By the CLT for large $n$,
+				$$
+					\sum^n_{i = 1} Y_i \approx N\left(n\expec{Y_i}, n  \text{Var}[Y_i]\right)
+				$$
+				which can be used to approximate the distribution $T$ and hence to construct approximate confidence intervals.
+
+
+		\section{Tests}
+			\subsection{Null and alternative hypotheses}
+				Starting with a sample $X_1, \ldots, X_n$, consider a family of probability measures $P_\theta$ with $\theta \in \Theta$ that describes our possible models. The basic problem is to decide between two classes of models - namely, the null hypothesis and the alternative hypothesis. \\
+				One sets 
+				\begin{itemize}
+					\item \mydef{Null hypothesis} $H_0 : \theta \in \Theta_0$
+					\item \mydef{Alternative hypothesis} $H_A : \theta \in \Theta_A$
+				\end{itemize}
+				with $\Theta_0 \cap \Theta_A = \emptyset$ (default : $\Theta_A = \Theta \setminus \Theta_0)$. When $\Theta_0$ or $\Theta_A$ consists of a single value $\theta_0$ or $\theta_A$, they are called \mydef{simple}, otherwise they are called \mydef{composite}.
+
+
+
+			\subsection{Tests and decisions}
+				\begin{definition}
+					A \mydef{test} is a pair $(T, K)$, where 
+					\begin{itemize}
+						\item $T$ is a statistic of the form $T = t(X_1, \ldots, X_n)$ (the \mydef{test statistic}) and 
+						\item $K \subset \mathbb{R}$ is a (deterministic) set, called the \mydef{critical region} (or \mydef{rejection region}).
+					\end{itemize}
+				\end{definition}
+
+				A statistical test enables us to systematically accept or reject the null hypothesis. We first compute the test statistic $T(\omega) = t(X_1(\omega), \ldots, X_n(\omega))$ and then follow the decision rule : reject $H_0$ if $T(\omega) \in K$ and don't reject $H_0$ if $T(\omega) \notin K$. \\
+
+				There are two types of errors :
+				\begin{enumerate}
+					\item A \mydef{Type I error} occurs when the null hypothesis is wrongly rejected even though it is true. Probability : $P_\theta[T \in K]$, for $\theta \in \Theta_0$.
+					\item A \mydef{Type II error} occurs when the null hypothesis is not rejected even though it is false. Probability : $P_\theta[T \notin K] = 1 - P_\theta[T \in K]$ for $\theta \in \Theta_A$.
+				\end{enumerate}
+
+
+			\subsection{Significance level and power}
+				\begin{definition}
+					Let $\alpha \in (0,1)$. A test $(T, K)$ is said to have \mydef{significance level} $\alpha$ if for all $\theta \in \Theta_0$
+					$$
+						P_\theta [T \in K] \leq \alpha
+					$$
+				\end{definition}
+				
+				\begin{intuition}
+					The significance level is the probability you're willing to accept of making a wrong decision, specifically rejecting the null hypothesis when it's actually true.
+				\end{intuition}
+
+				\begin{definition}
+					The \mydef{power} of a test $(T, K)$ is the function 
+					$$
+					\beta : \Theta_A \to [0,1], \quad \theta \mapsto \beta(\theta) := P_\theta[T \in K]
+					$$
+				\end{definition}
+					
+				\begin{intuition}
+					The power is the "strength" of the test to avoid failing to detect an effect when one actually exists.
+				\end{intuition}
+
+
+			\subsection{Construction of tests}
+				Assume $\theta_0 \neq \theta_A$ are two fixed numbers. Assume both the null hypothesis and alternative hypothesis are simple, i.e. $H_0 : \theta = \theta_0 \quad H_A : \theta = \theta_A$. Assume r.v. $X_1, \ldots, X_n$ are either jointly discrete or jointly continuous under both $P_{\theta_0}$ and $P_{\theta_A}$. In particular, $L(x_1, \ldots, x_n ; \theta)$ is well-defined for $\theta = \theta_0$ and $\theta = \theta_A$.
+
+				\begin{definition}
+					For every $x_1, \ldots, x_n$, the \mydef{likelihood ratio} is defined by 
+					$$
+						R(x_1, \ldots, x_n) := \frac{L(x_1, \ldots, x_n ; \theta_A)}{L(x_1, \ldots, x_n ; \theta_0)}
+					$$
+					By convention, if $L(x_1, \ldots, x_n ; \theta_0) = 0$, we set the ratio to $+\infty$.
+				\end{definition}
+
+				\begin{intuition}
+					A large ratio indicates that the observations $x_1, \ldots, x_n$ are far more likely under the alternative $P_{\theta_A}$ than under the null $P_{\theta_0}$. Hence it makes sense to define the test statistic as $T := R(X_1, \ldots, X_n)$ and the critical region as $K := (c, \infty)$, for some constant $c$.
+				\end{intuition}
+
+				\begin{definition}
+					Let $c \geq 0$. The \mydef{likelihood ratio test} with parameter $c$ is the test $(T,K)$ where $T = R(X_1, \ldots, X_n)$ and $K = (c, \infty)$. It is optimal : no test have lower power while no greater significance level (\mydef{Neyman-Pearson Lemma}).
+				\end{definition}
+
+				\begin{definition}
+					For composite hypotheses, the \mydef{generalized likelihood ratio} can be defined as 
+					$$
+						R(x_1, \ldots, x_n) := \frac{\sup_{\theta \in \Theta_A} L(x_1, \ldots, x_n ; \theta)}{\sup_{\theta \in \Theta_0} L(x_1, \ldots, x_n ; \theta)}
+					$$
+					and we choose $T := R(X_1, \ldots, X_n)$ with $K = (c_0, \infty)$ where $c_0$ is chosen s.t. the test has the preassigned significance level.
+				\end{definition}
+
+
+			\subsection{The p-value}
+				Let $X_1, \ldots, X_n$ be a sample of size $n$. We wish to test a hypothesis $H_0 : \theta = \theta_0$ against an alternative $H_A : \theta \in \Theta_A$.
+
+				\begin{definition}
+					A \mydef{family of tests} $(T, (K_t)_{t \geq 0})$ is said to be \mydef{ordered} with respect to the test statistic $T$ if for all $s,t \geq 0$
+					$$
+						s \leq t \ \Longrightarrow \ K_s \subset K_t
+					$$
+					Typical examples are :
+					$$
+						K_t = (t, \infty) \ \text{(right-tailed test),} \ K_t = (-\infty, -t) \ \text{(left-tailed test),}
+					$$
+					$$
+					 	\text{or } \quad K_t = (-\infty, -t) \cup (t, \infty) \ \text{(two-sided test).}
+					$$
+				\end{definition}
+
+				\begin{definition}
+					Let $H_0 : \theta = \theta_0$ be a simple null hypothesis and let $(T, (K_t)_{t \geq 0})$ be an ordered family of tests. The \mydef{p-value} is defined as the r.v. $\text{p-value} = G(T)$, where the function $G : \mathbb{R}^+ \to [0,1]$ is given by 
+					$$
+						G(t) = P_\theta [T \in K_t]
+					$$
+				\end{definition}
+
+				\begin{intuition}
+					The p-value informs us which tests in our family would lead to rejection of $H_0$. If the observed p-value is $p$, then every test with significance level $a > p$ would reject $H_0$ and those with $a \leq p$ would not. The p-value doesn't depend on the alternative hypothesis.
+				\end{intuition}
+
 
 
 
